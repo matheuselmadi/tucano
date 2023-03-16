@@ -12,4 +12,20 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  timedOutCloser: any;
+
+  mouseEnter(trigger: any) {
+    if (this.timedOutCloser) {
+      clearTimeout(this.timedOutCloser);
+    }
+    trigger.openMenu();
+  }
+
+  mouseLeave(trigger: any) {
+    this.timedOutCloser = setTimeout(() => {
+      trigger.closeMenu();
+    }, 50);
+  }
+
+  
 }
