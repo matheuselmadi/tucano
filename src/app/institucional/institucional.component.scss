@@ -1,0 +1,57 @@
+.container {
+    flex: 0 0 auto;
+    background-color: black;
+    height: 100px;
+    color: aliceblue;
+    font-size: xx-large;
+    justify-content: space-evenly;
+  }
+
+  .text-container {
+    flex: 0 0 auto;
+    background-color: beige;
+    height: 100px;
+    color: black;
+    font-size: large;
+    text-align: center;
+  }
+
+  .text-container-2 {
+    flex: 0 0 auto;
+    background-color: beige;
+    height: 200px;
+    color: black;
+    font-size: large;
+    text-align: center;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  .center {
+    margin: auto;
+    margin-top: 10px;
+    width: 50%;
+  }
+
+  .radius {
+    border-radius: 15px;
+  }
+
+  .example-button-row {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
