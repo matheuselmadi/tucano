@@ -1,57 +1,139 @@
-.container {
-    flex: 0 0 auto;
-    background-color: black;
-    height: 100px;
-    color: aliceblue;
-    font-size: xx-large;
-    justify-content: space-evenly;
-  }
+body{
+  min-height: 300px;
+}
 
-  .text-container {
-    flex: 0 0 auto;
-    background-color: beige;
-    height: 100px;
-    color: black;
-    font-size: large;
-    text-align: center;
-  }
+.container{
+  display: grid;
+  color: white;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 70px 470px 50px 150px 50px 150px 50px 50px 200px 70px 160px;
+  grid-template-areas: "css-institucional css-institucional" "css-video css-video" "css-valores css-valores" "css-desc-valores css-desc-valores"
+		"css-sustentabilidade css-sustentabilidade" "css-desc1-sustentabilidade css-desc2-sustentabilidade"
+  "css-info css-info"
+	"css-localizacao-title css-localizacao-title"
+	"css-localizacao-imagem css-localizacao-desc"
+	"css-phrase css-phrase"
+  "css-footer css-footer";
+}
 
-  .text-container-2 {
-    flex: 0 0 auto;
-    background-color: beige;
-    height: 200px;
-    color: black;
-    font-size: large;
-    text-align: center;
-  }
+.css-institucional{
+	color: black;
+	background-color: #DCDCDC;
+	border-radius: 8px;
+  grid-area: css-institucional;
+}
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.css-video{
+	color: black;
+	grid-area: css-video;
+}
+.css-valores{
+	color: black;
+  grid-area: css-valores;
+}
+.css-desc-valores{
+	color: black;
+	background-color: #DCDCDC;
+	border-radius: 8px;
+  grid-area: css-desc-valores;
+}
 
-  .column {
-    float: left;
-    width: 50%;
-  }
+.css-sustentabilidade{
+	color: black;
+  grid-area: css-sustentabilidade;
+}
+.css-desc1-sustentabilidade{
+	color: black;
+	background-color: #DCDCDC;
+	border-radius: 8px;
+  grid-area: css-desc1-sustentabilidade;
+}
 
-  .center {
-    margin: auto;
-    margin-top: 10px;
-    width: 50%;
-  }
+.css-desc2-sustentabilidade{
+	color: black;
+	background-color: #DCDCDC;
+	border-radius: 8px;
+  grid-area: css-desc2-sustentabilidade;
+}
 
-  .radius {
-    border-radius: 15px;
-  }
+.css-info{
+	color: black;
+  grid-area: css-info;
+}
 
-  .example-button-row {
-    max-width: 600px;
-    display: block;
-    margin: auto;
-  }
-  
-  .example-button-row .mat-mdc-button-base {
-    margin: 8px 8px 8px 0;
-  }
+.css-localizacao-title{
+	color: black;
+  grid-area: css-localizacao-title;
+}
+
+.css-localizacao-imagem{
+	color: black;
+	background-color: #DCDCDC;
+	border-radius: 8px;
+  grid-area: css-localizacao-imagem;
+}
+
+.css-localizacao-desc{
+	color: black;
+	background-color: #DCDCDC;
+	border-radius: 8px;
+  grid-area: css-localizacao-desc;
+}
+
+.css-phrase{
+	color: black;
+	background-color: #DCDCDC;
+	border-radius: 8px;
+  grid-area: css-phrase;
+}
+
+.css-main{
+  grid-area: css-main;
+  height: 700px;
+}
+
+.css-footer{
+	color: black;
+  grid-area: css-footer;
+}
+
+.text-center{
+	text-align:center;
+	vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 15px;
+}
+
+img {
+	margin-top: 10px;
+	margin-left: 110px;
+	border-radius: 8px;
+	width: 320px;
+	height: 180px;
+}
+
+.text-config {
+	margin-left: 100px;
+	margin-right: 100px;
+	font-size: large;
+}
+
+.text-config2 {
+	margin-left: 70px;
+	margin-right: 70px;
+	font-size: large;
+}
+
+.margin-video {
+	margin-top: 10px;
+}
+
+.text-title {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.text-margin {
+	margin: 10px;
+}
