@@ -1,1 +1,32 @@
-<p>header works!</p>
+<p> 
+    <mat-toolbar color="primary" style="background-color: antiquewhite; height: 120px;">
+        <a class="fill-remaining-space"></a>
+        <img src="assets/images/logo.png" style="height: 60px; margin: 10px;" /> 
+        <a style="margin: 10px;" routerLink="/home" routerLinkActive="active" >Início</a>
+        <a style="margin: 10px;" routerLink="/institucional" routerLinkActive="active"  >Institucional</a>
+        <a style="margin: 10px;" routerLink="/institucional" routerLinkActive="active" [matMenuTriggerFor]="menu"
+        #menuTrigger="matMenuTrigger" (mouseenter)="mouseEnter(menuTrigger)" (mouseleave)="mouseLeave(menuTrigger)">Produtos</a>
+        <a style="margin: 10px;" routerLink="/institucional" routerLinkActive="active" >Vendas</a>
+        <a style="margin: 10px;" routerLink="/institucional" routerLinkActive="active" >Blog</a>
+        <a class="fill-remaining-space" style="margin: 10px;" routerLink="/institucional" routerLinkActive="active" >Contato</a>
+        <a style="margin: 10px;" routerLink="/institucional" routerLinkActive="active" >social</a>
+        <a style="margin: 10px;" routerLink="/institucional" routerLinkActive="active" >social</a>
+        <a style="margin: 10px;" routerLink="/institucional" routerLinkActive="active" >social</a>
+        <a class="fill-remaining-space"></a>
+    </mat-toolbar>
+</p>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<div class="app-nav-item" [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger"
+(mouseenter)="mouseEnter(menuTrigger)" (mouseleave)="mouseLeave(menuTrigger)">
+<ng-content select="[trigger]"></ng-content>
+</div>
+<mat-menu #menu="matMenu" [hasBackdrop]="false">
+<div (mouseenter)="mouseEnter(menuTrigger)" (mouseleave)="mouseLeave(menuTrigger)">
+<ng-content select="[content]"></ng-content>
+</div>
+</mat-menu>
