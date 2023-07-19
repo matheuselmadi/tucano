@@ -1,0 +1,123 @@
+.toolbar {
+    background-color: rgb(255, 255, 255);
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.container a {
+    color: #121311;
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: #eb8f04;
+}
+
+.container button:hover {
+    color: #eb8f04;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 28%;
+}
+
+.space {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 10%;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 20%;
+}
+
+.social-media button:hover {
+    color: #eb8f04;
+}
+
+.button-text {
+    font-size: 20px;
+}
+
+.menu-item {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    color: #eb8f04;
+}
+
+.iconMenu {
+    display: none;
+}
+
+.sidenav {
+    width: 250px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    height: 100vh;
+}
+
+.container-nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.button-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes-container-nav {
+    font-size: 17px;
+}
+
+.botoes-container-nav-exp {
+    font-size: 20px;
+}
+
+.botoes-container-nav:hover {
+    color: #eb8f04;
+}
+
+.botoes-container-nav-exp:hover {
+    color: #eb8f04;
+}
+
+@media (max-width: 1220px) {
+    .hiddenDiv {
+        display: none;
+    }
+
+    .iconMenu {
+        display: flex;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 60%;
+    }
+
+    .logo {
+        justify-content: flex-start;
+        height: auto;
+    }
+}

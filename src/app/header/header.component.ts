@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-header',
@@ -7,25 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  showFiller = false;
+  isClick = false;
+  
+  @ViewChild(MatAccordion) accordion!: MatAccordion;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  timedOutCloser: any;
-
-  mouseEnter(trigger: any) {
-    if (this.timedOutCloser) {
-      clearTimeout(this.timedOutCloser);
-    }
-    trigger.openMenu();
+  clicked(){
+    this.isClick = !this.isClick;
   }
-
-  mouseLeave(trigger: any) {
-    this.timedOutCloser = setTimeout(() => {
-      trigger.closeMenu();
-    }, 50);
-  }
-
   
 }
