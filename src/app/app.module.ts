@@ -14,6 +14,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatNativeDateModule} from '@angular/material/core';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -54,7 +56,8 @@ import { ContatoComponent } from './contato/contato.component';
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

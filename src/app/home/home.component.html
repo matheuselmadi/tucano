@@ -1,7 +1,10 @@
-<img src="assets/images/slide5.jpg"/>
+<img src="assets/images/slide5.jpg" />
 
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+<h1 style="margin-left: 10%; margin-right: 10%;">Ngx-Slick-Carousel</h1>
+<div style="margin-left: 10%; margin-right: 10%; margin-top: 50px;">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img src="{{ slide.img }}" alt="" class="img-style">
+    </div>
+  </ngx-slick-carousel>
+</div>
