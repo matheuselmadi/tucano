@@ -1,10 +1,15 @@
-<img src="assets/images/slide5.jpg" />
-
-<h1 style="margin-left: 10%; margin-right: 10%;">Ngx-Slick-Carousel</h1>
-<div style="margin-left: 10%; margin-right: 10%; margin-top: 50px;">
-  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-      <img src="{{ slide.img }}" alt="" class="img-style">
+<div class="slide-container">
+  <div class="slide-item" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentImageIndex }">
+    <div class="slide-content">
+      <h2>{{ image.title }}</h2>
+      <p>{{ image.description }}</p>
+      <button (click)="onButtonClick(image.buttonAction)">{{ image.buttonText }}</button>
     </div>
-  </ngx-slick-carousel>
+    <img [src]="image.src" [alt]="image.alt" />
+  </div>
+</div>
+
+<div class="controls">
+  <div class="prev-arrow" (click)="prevImage()"><i class="material-icons">chevron_left</i></div>
+  <div class="next-arrow" (click)="nextImage()"><i class="material-icons">chevron_right</i></div>
 </div>

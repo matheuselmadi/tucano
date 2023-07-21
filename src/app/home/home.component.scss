@@ -1,17 +1,106 @@
-.slick-prev:before, .slick-next:before{
-  color: black !important;
+.controls {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.img-style{
-  margin-left: auto;
-  margin-right: auto;
-  height: 250px;
-  width: 250px;
+.prev-arrow,
+.next-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  outline: none;
 }
 
-@media (max-width: 992){
-  .img-style{
-    margin-left: 10px !important;
-    margin-right: 10px !important;
-  }
+.next-arrow {
+  left: auto;
+  right: 0;
+}
+
+.slide-container {
+  position: relative;
+  width: 1903px; /* Defina a largura do slide conforme necessário */
+  height: 550px; /* Defina a altura do slide conforme necessário */
+  overflow: hidden;
+}
+
+.slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slide-item.active {
+  opacity: 1;
+}
+
+.slide-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.5s; /* Transição suave de escala (zoom) */
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 250px; /* Ajuste para a distância em relação à parte inferior da imagem */
+  left: 26.5%;
+  transform: translateX(-50%);
+  //background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: left;
+  padding: 10px;
+  max-width: 15%; /* Defina uma largura máxima para o texto */
+  opacity: 0; /* Esconda o texto inicialmente */
+  transition: opacity 0.5s; /* Transição suave da opacidade do texto */
+}
+
+.slide-item.active .slide-content {
+  opacity: 1; /* Mostre o texto quando o slide está ativo */
+}
+
+.slide-content h2 {
+  font-size: 34px;
+  transition: transform 0.5s; /* Transição suave de escala (zoom) para o título */
+}
+
+.slide-content p {
+  padding-top: 20px;
+  font-size: 20px;
+  transition: transform 0.5s; /* Transição suave de escala (zoom) para a descrição */
+}
+
+.slide-content button {
+  padding: 10px 20px;
+  background-color: #eb8f04;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.5s; /* Transição suave de escala (zoom) para o botão */
+}
+
+.slide-item.active .slide-content h2,
+.slide-item.active .slide-content p,
+.slide-item.active .slide-content button {
+  transform: scale(1); /* Aplique escala 1 para mostrar o título, descrição e botão */
+}
+
+.slide-item .slide-content h2,
+.slide-item .slide-content p,
+.slide-item .slide-content button {
+  transform: scale(0.8); /* Aplique escala 0.8 para esconder o título, descrição e botão */
 }
