@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,13 +15,12 @@ export class HomeComponent implements OnInit, OnDestroy {
   images = [
     {
       src: 'assets/images/slide1.JPG',
-      alt: 'TUCANODRENO',
+      alt: 'TUCANOLISO',
       title: 'TUCANOLISO®',
       description: 'Linha de tubos lisos da Tucano.',
       buttonText: 'SAIBA MAIS',
       buttonAction: () => {
-        // Lógica do botão 1
-        console.log('Botão 1 clicado');
+        this.router.navigate(['/tucanoliso']);
       }
     },
     {
@@ -30,8 +30,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       description: 'Linha de drenagem da Tucano.',
       buttonText: 'SAIBA MAIS',
       buttonAction: () => {
-        // Lógica do botão 2
-        console.log('Botão 2 clicado');
+        this.router.navigate(['/tucanodreno']);
       }
     },
     {
@@ -41,8 +40,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       description: 'Linha de Eletrodutos Flexíveis e Corrugados da Tucano.',
       buttonText: 'SAIBA MAIS',
       buttonAction: () => {
-        // Lógica do botão 3
-        console.log('Botão 3 clicado');
+        this.router.navigate(['/tucanoduto']);
       }
     },
     {
@@ -52,13 +50,12 @@ export class HomeComponent implements OnInit, OnDestroy {
       description: 'Linha de manilhas da Tucano.',
       buttonText: 'SAIBA MAIS',
       buttonAction: () => {
-        // Lógica do botão 3
-        console.log('Botão 3 clicado');
+        this.router.navigate(['/manilha']);
       }
     }
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.startSlideInterval();

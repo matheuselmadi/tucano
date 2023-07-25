@@ -1,6 +1,6 @@
 .controls {
   position: absolute;
-  top: 38%;
+  top: 45%;
   left: 0;
   width: 100%;
   display: flex;
@@ -33,18 +33,23 @@
   width: 1903px; /* Defina a largura do slide conforme necessário */
   height: 550px; /* Defina a altura do slide conforme necessário */
   overflow: hidden;
+  max-width: 100%;
 }
 
 .slide-item {
+  opacity: 0;
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  width: 100%;
+  height: 100%;
   transition: opacity 0.5s;
 }
 
 .slide-item.active {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .slide-item img {
@@ -52,11 +57,12 @@
   height: 100%;
   display: block;
   transition: transform 0.5s; /* Transição suave de escala (zoom) */
+  object-fit: cover;
 }
 
 .slide-content {
   position: absolute;
-  bottom: 250px; /* Ajuste para a distância em relação à parte inferior da imagem */
+  bottom: 210px; /* Ajuste para a distância em relação à parte inferior da imagem */
   left: 26.5%;
   transform: translateX(-50%);
   //background-color: rgba(0, 0, 0, 0.2);
@@ -91,6 +97,33 @@
   cursor: pointer;
   margin-top: 10px;
   transition: transform 0.5s; /* Transição suave de escala (zoom) para o botão */
+}
+
+.slide-content button:hover {
+  background-color: #ff661f;
+}
+
+.new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 12px;
+  background-color: #00ff00;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 0; /* Garanta que o texto fique acima das imagens */
+  animation: blinkingBadge 1s infinite; /* Adicione a animação */
+}
+
+/* Animação para piscar o texto */
+@keyframes blinkingBadge {
+  0%, 49.9%, 100% {
+    opacity: 0;
+  }
+  50%, 99.9% {
+    opacity: 1;
+  }
 }
 
 .slide-item.active .slide-content h2,

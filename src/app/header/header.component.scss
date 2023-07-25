@@ -1,6 +1,9 @@
 .toolbar {
     background-color: rgb(255, 255, 255);
     height: 120px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .container {
@@ -72,6 +75,7 @@
     top: 120px;
     right: 0;
     height: 100vh;
+    z-index: 1;
 }
 
 .container-nav {
