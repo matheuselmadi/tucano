@@ -1,0 +1,52 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 300px; /* Adicione o padding para espaço nas laterais */
+  }
+  
+  .logo {
+    width: 250px;
+  }
+  
+  .footer-text {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .social-buttons button {
+    margin-right: 10px;
+    color: white;
+  }
+
+  .social-buttons button:hover{
+    color: #ffab0f;
+  }
+  
+  .contact-info {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .address {
+    display: block;
+  }
+  
+  .phone {
+    display: block;
+  }
+
+  .number {
+    text-decoration: none;
+    color: white;
+  }
+
+  .number:hover {
+    color: #ffab0f;
+  }

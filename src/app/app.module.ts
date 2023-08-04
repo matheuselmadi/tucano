@@ -28,6 +28,7 @@ import { ManilhaComponent } from './produtos/manilha/manilha.component';
 import { AcessoriosComponent } from './produtos/acessorios/acessorios.component';
 import { VendasComponent } from './vendas/vendas.component';
 import { ContatoComponent } from './contato/contato.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ContatoComponent } from './contato/contato.component';
     ManilhaComponent,
     AcessoriosComponent,
     VendasComponent,
-    ContatoComponent
+    ContatoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserAnimationsModule,
