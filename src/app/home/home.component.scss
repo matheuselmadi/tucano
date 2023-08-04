@@ -92,7 +92,7 @@
 
 .slide-content button {
   padding: 10px 20px;
-  background-color: #eb8f04;
+  background-color: #ffab0f;
   color: white;
   border: none;
   cursor: pointer;
@@ -197,7 +197,7 @@
 }
 
 .vendedor a :hover {
-  color: #eb8f04;
+  color: #ffab0f;
   font-weight: bold;
 }
 
@@ -242,6 +242,10 @@
 
 .localizacao h3 {
   font-size: 22px;
+}
+
+.localizacao h4 {
+  font-size: 16px;
 }
 
 .produtos-container {
@@ -320,7 +324,6 @@ p {
 .materia-prima {
   margin-top: 1050px;
   position: absolute;
-  width: 800px;
   left: 50%;
   transform: translateX(-50%);
   padding: 50px;
@@ -336,3 +339,61 @@ p {
 .materia-prima h3 {
   font-size: 22px;
 }
+
+.materia-prima h4 {
+  font-size: 16px;
+}
+
+/* Estilo para o banner */
+.banner {
+  margin-top: 1700px;
+  height: 6cm;
+  background-color: #ff661f;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Alinha o conteúdo à esquerda e à direita */
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px; /* Defina a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.text {
+  flex-grow: 1; /* Expande o espaço disponível para o texto */
+  width: 700px;
+}
+
+.banner h2 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.banner p {
+  color: white;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: white;
+  color: #ff661f;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 250px; /* Espaço entre o texto e o botão */
+}
+
+.btn:hover {
+  background-color: #ffab0f;
+  color: white;
+}
+
+
