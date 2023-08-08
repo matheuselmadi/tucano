@@ -1,104 +1,176 @@
-body{
-  min-height: 300px;
+body {
+	min-height: 300px;
 }
 
-.container{
-  display: grid;
-  color: white;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 70px 470px 50px 150px 50px 150px 50px 50px 200px 70px 160px;
-  grid-template-areas: "css-institucional css-institucional" "css-video css-video" "css-valores css-valores" "css-desc-valores css-desc-valores"
+.container {
+	margin-top: 120px;
+	display: grid;
+	color: white;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 70px 470px 50px 150px 50px 150px 50px 390px 281px;
+	grid-template-areas: "css-institucional css-institucional" "css-video css-video" "css-valores css-valores" "css-desc-valores css-desc-valores"
 		"css-sustentabilidade css-sustentabilidade" "css-desc1-sustentabilidade css-desc2-sustentabilidade"
-  "css-info css-info"
-	"css-localizacao-title css-localizacao-title"
-	"css-localizacao-imagem css-localizacao-desc"
-	"css-phrase css-phrase"
-  "css-footer css-footer";
+		"css-info css-info"
+		"css-localizacao-title css-localizacao-title"
+		"css-localizacao-imagem css-localizacao-desc";
 }
 
-.css-institucional{
-	color: black;
-	background-color: #DCDCDC;
-	border-radius: 8px;
-  grid-area: css-institucional;
+.css-institucional {
+	color: white;
+	background-color: #333;
+	height: 82px;
+	grid-area: css-institucional;
 }
 
-.css-video{
+.css-video {
 	color: black;
 	grid-area: css-video;
 }
-.css-valores{
+
+.css-valores {
+	margin-top: 180px;
 	color: black;
-  grid-area: css-valores;
+	grid-area: css-valores;
 }
-.css-desc-valores{
+
+.css-valores h2 {
+	font-size: 24px;
+}
+
+.css-desc-valores {
+	margin-top: 180px;
 	color: black;
 	background-color: #DCDCDC;
 	border-radius: 8px;
-  grid-area: css-desc-valores;
+	grid-area: css-desc-valores;
 }
 
-.css-sustentabilidade{
-	color: black;
-  grid-area: css-sustentabilidade;
-}
-.css-desc1-sustentabilidade{
-	color: black;
-	background-color: #DCDCDC;
-	border-radius: 8px;
-  grid-area: css-desc1-sustentabilidade;
+.css-desc-valores h3 {
+	font-size: 22px;
+	width: 800px;
+	margin-left: 26.5%;
 }
 
-.css-desc2-sustentabilidade{
+.css-sustentabilidade {
+	margin-top: 200px;
 	color: black;
-	background-color: #DCDCDC;
-	border-radius: 8px;
-  grid-area: css-desc2-sustentabilidade;
+	grid-area: css-sustentabilidade;
 }
 
-.css-info{
-	color: black;
-  grid-area: css-info;
+.css-sustentabilidade h2 {
+	font-size: 24px;
 }
 
-.css-localizacao-title{
-	color: black;
-  grid-area: css-localizacao-title;
-}
-
-.css-localizacao-imagem{
+.css-desc1-sustentabilidade {
+	margin-top: 200px;
+	width: 500px;
+	padding-left: 32%;
+	text-align: center;
 	color: black;
 	background-color: #DCDCDC;
 	border-radius: 8px;
-  grid-area: css-localizacao-imagem;
+	grid-area: css-desc1-sustentabilidade;
 }
 
-.css-localizacao-desc{
+.css-desc1-sustentabilidade img {
+	width: 64px;
+	height: 64px;
+	margin-left: -6px;
+}
+
+.css-desc2-sustentabilidade {
+	margin-top: 200px;
+	width: 500px;
+	text-align: center;
 	color: black;
 	background-color: #DCDCDC;
 	border-radius: 8px;
-  grid-area: css-localizacao-desc;
+	grid-area: css-desc2-sustentabilidade;
 }
 
-.css-phrase{
+.css-desc2-sustentabilidade img {
+	width: 64px;
+	height: 64px;
+	margin-left: -6px;
+}
+
+.css-info {
+	margin-top: 240px;
 	color: black;
-	background-color: #DCDCDC;
-	border-radius: 8px;
-  grid-area: css-phrase;
+	grid-area: css-info;
 }
 
-.css-main{
-  grid-area: css-main;
-  height: 700px;
+.css-info button {
+	background-color: #333;
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.3s, color 0.3s;
 }
 
-.css-footer{
+.css-info button:hover {
+	background-color: #ffab0f;
+	color: white;
+}
+
+.css-localizacao-title {
+	margin-top: 300px;
 	color: black;
-  grid-area: css-footer;
+	background-color: #ffffff;
+	grid-area: css-localizacao-title;
 }
 
-.text-center{
-	text-align:center;
+.css-localizacao-title h2 {
+	margin-top: 30px;
+	font-size: 24px;
+}
+
+.css-localizacao-imagem {
+	padding-left: 30%;
+	color: black;
+	background-color: #ffffff;
+	height: 280px;
+	grid-area: css-localizacao-imagem;
+}
+
+.css-localizacao-imagem img {
+	width: 500px;
+	height: 210px;
+	border-radius: 2;
+}
+
+.css-localizacao-desc {
+	color: black;
+	background-color: #ffffff;
+	height: 280px;
+	grid-area: css-localizacao-desc;
+}
+
+.css-localizacao-desc h2 {
+	margin-top: 30px;
+	font-size: 22px;
+	width: 600px;
+}
+
+.css-localizacao-desc p {
+	font-size: 16px;
+	width: 600px;
+}
+
+.img-home {
+	height: 300px;
+	width: 100%
+}
+
+.css-main {
+	grid-area: css-main;
+	height: 700px;
+}
+
+.text-center {
+	text-align: center;
 	vertical-align: middle;
 	display: inline-block;
 	vertical-align: middle;
@@ -126,14 +198,26 @@ img {
 }
 
 .margin-video {
-	margin-top: 10px;
+	margin-top: 82px;
 }
 
 .text-title {
-	margin-left: 20px;
-	margin-top: 10px;
+	margin-left: 270px;
+	margin-top: 28px;
+}
+
+.text-title h1 {
+	font-size: 30px;
 }
 
 .text-margin {
 	margin: 10px;
 }
+
+// .img-inst {
+// 	margin-left: -1px;
+// 	margin-top: -79px;
+// 	height: 300px;
+// 	width: 1904px;
+// 	border-radius: 0;
+// }

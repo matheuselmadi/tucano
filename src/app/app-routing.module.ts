@@ -11,6 +11,7 @@ import { ManilhaComponent } from './produtos/manilha/manilha.component';
 import { AcessoriosComponent } from './produtos/acessorios/acessorios.component';
 import { VendasComponent } from './vendas/vendas.component';
 import { ContatoComponent } from './contato/contato.component';
+import { SustentabilidadeComponent } from './sustentabilidade/sustentabilidade.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:"manilha", component:ManilhaComponent},
   {path:"acessorios", component:AcessoriosComponent},
   {path:"vendas", component:VendasComponent},
-  {path:"contato", component:ContatoComponent}
+  {path:"contato", component:ContatoComponent},
+  {path:"sustentabilidade", component:SustentabilidadeComponent}
 ];
 
 
