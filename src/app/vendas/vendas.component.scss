@@ -1,0 +1,121 @@
+.container-start {
+    margin-top: 120px;
+}
+
+.css-vendas {
+    color: white;
+    background-color: #333;
+    height: 82px;
+}
+
+.text-title {
+    margin-left: 270px;
+    padding-top: 28px;
+}
+
+.text-title h1 {
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+}
+
+.mapa {
+    width: 50%;
+    padding: 20px;
+}
+
+.central-atendimento {
+    width: 50%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.central-atendimento h2 {
+    font-size: 24px;
+}
+
+.central-atendimento p {
+    font-size: 16px;
+    width: 600px;
+}
+
+.departamento h2 {
+    font-size: 22px;
+}
+
+.vendedores h3 {
+    margin-top: 20px;
+}
+
+.vendedores p {
+    margin-top: -10px;
+}
+
+#map {
+    display: none;
+}
+
+#map .state {
+    cursor: pointer;
+}
+
+#map .state .shape {
+    cursor: pointer;
+    -width: 0;
+    fill: #0f7058;
+
+}
+
+#map .state .label_icon_state {
+    fill: #fff;
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: normal;
+}
+
+#map .state .label_state {
+    display: none;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+#map .state:hover .label_state,
+#map .state.hover .label_state {
+    display: block;
+}
+
+#map .model-green .state .shape {
+    transition: fill 0.3s ease-in-out; /* Transição suave da cor */
+    fill: #ffab0f;
+}
+
+#map .model-green .state.selected .shape {
+    fill: #000;
+}
+
+#map .model-green .state .icon_state {
+    fill: #ff661f;
+}
+
+#map .model-green .state .label_icon_state {
+    fill: #fff;
+}
+
+#map .model-green .state .label_state {
+    fill: #666;
+}
+
+#map .model-green .state:hover .shape,
+#map .model-green .state.hover .shape {
+    fill: #333;
+}
+
+#map .model-green .state:hover .icon_state,
+#map .model-green .state.hover .icon_state {
+    fill: #000;
+}
