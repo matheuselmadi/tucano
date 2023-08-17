@@ -26,6 +26,11 @@
     padding: 20px;
 }
 
+.mapa p {
+    margin-left: 290px;
+    margin-top: 20px;
+}
+
 .central-atendimento {
     width: 50%;
     padding: 20px;
@@ -43,15 +48,81 @@
 
 .departamento h2 {
     font-size: 22px;
+    margin-top: 26px;
 }
 
-.vendedores h3 {
-    margin-top: 20px;
+.departamento h3 {
+    font-size: 22px;
+    margin-bottom: 26px;
 }
+
+// .vendedores h3 {
+//     margin-top: 20px;
+// }
 
 .vendedores p {
     margin-top: -10px;
 }
+
+.vendedores h4 {
+    margin-top: -10px;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+.atendimento p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.atendimento button {
+	background-color: #333;
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px;
+}
+
+.atendimento button:hover {
+	background-color: #ffab0f;
+	color: white;
+}
+
+.vendedores {
+  display: flex;
+  flex-direction: column; /* Exibe os vendedores em uma única coluna por padrão */
+}
+
+.vendedores > div {
+//   padding: 10px; /* Espaçamento entre os vendedores */
+  box-sizing: border-box;
+}
+
+.multiple-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Define a largura das colunas */
+  gap: 10px; /* Espaçamento entre as colunas e linhas */
+  max-width: 750px;
+//   grid-column-gap: 0px; /* Espaçamento menor entre as colunas */
+}
+
+.multiple-columns h4 {
+    margin-bottom: 12px;
+}
+
+.vendedores a {
+    text-decoration: none;
+    color: #ff661f;
+  }
+  
+  .vendedores a :hover {
+    color: #ffab0f;
+    font-weight: bold;
+  }
 
 #map {
     display: none;

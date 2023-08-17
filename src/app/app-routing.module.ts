@@ -12,6 +12,7 @@ import { AcessoriosComponent } from './produtos/acessorios/acessorios.component'
 import { VendasComponent } from './vendas/vendas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { SustentabilidadeComponent } from './sustentabilidade/sustentabilidade.component';
+import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path:"acessorios", component:AcessoriosComponent},
   {path:"vendas", component:VendasComponent},
   {path:"contato", component:ContatoComponent},
-  {path:"sustentabilidade", component:SustentabilidadeComponent}
+  {path:"sustentabilidade", component:SustentabilidadeComponent},
+  {path:"trabalhe-conosco", component:TrabalheConoscoComponent}
 ];
 
 

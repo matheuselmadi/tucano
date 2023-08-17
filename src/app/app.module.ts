@@ -31,6 +31,7 @@ import { VendasComponent } from './vendas/vendas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FooterComponent } from './footer/footer.component';
 import { SustentabilidadeComponent } from './sustentabilidade/sustentabilidade.component';
+import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SustentabilidadeComponent } from './sustentabilidade/sustentabilidade.c
     VendasComponent,
     ContatoComponent,
     FooterComponent,
-    SustentabilidadeComponent
+    SustentabilidadeComponent,
+    TrabalheConoscoComponent
   ],
   imports: [
     BrowserAnimationsModule,
