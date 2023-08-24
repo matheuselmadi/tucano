@@ -249,6 +249,14 @@ export class VendasComponent implements OnInit {
       ]
 
     },
+    TO: {
+      departamento: 'Departamento Comercial',
+      numeroTelefone: '(64) 3491-5388',
+      vendedores: [
+        { nome: 'Não temos vendedores neste estado.', empresa: '', numero: '64 98112-1100', email: '', url: 'https://api.whatsapp.com/send/?phone=55464981121100&text&type=phone_number&app_absent=0', cidade: '' }
+      ]
+
+    },
     // Adicione mais estados e vendedores conforme necessário
   };
 

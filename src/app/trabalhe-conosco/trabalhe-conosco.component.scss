@@ -1,0 +1,60 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .form-card {
+    width: 600px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .file-input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 30px; /* Adicione o espaço desejado */
+  }
+  
+  .file-input-element {
+    margin-top: 10px;
+  }
+  
+  .selected-file-name {
+    color: #555;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  
+  /* Estilo para o rótulo do botão de enviar arquivo */
+.file-input-label {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+  }
+  
+  .file-input-label:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Esconder o input do tipo "file" */
+  .file-input-element {
+    display: none;
+  }
+
+  .mat-form-field-file-label{
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }

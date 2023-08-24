@@ -107,6 +107,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Define a largura das colunas */
   gap: 10px; /* Espaçamento entre as colunas e linhas */
   max-width: 750px;
+  overflow-x: hidden;
 //   grid-column-gap: 0px; /* Espaçamento menor entre as colunas */
 }
 
