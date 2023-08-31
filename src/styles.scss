@@ -6,3 +6,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 .fill-remaining-space{
     flex: 1 1 auto;
 }
+
+/* Estilos para mensagem de sucesso */
+.success-snackbar {
+    background-color: #4caf50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+  }
+  
+  /* Estilos para mensagem de erro */
+  .error-snackbar {
+    background-color: #f44336; /* Cor de fundo */
+    color: white; /* Cor do texto */
+  }
+  

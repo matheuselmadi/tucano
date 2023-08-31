@@ -1,28 +1,45 @@
-<div class="form-container">
-    <mat-card class="form-card">
-        <h2>Formulário Trabalhe Conosco</h2>
-        <form [formGroup]="trabalheConoscoForm">
-            <mat-form-field>
-                <input matInput formControlName="nome" placeholder="Nome" required>
-            </mat-form-field>
-            <mat-form-field>
-                <input matInput formControlName="email" type="email" placeholder="Email" required>
-            </mat-form-field>
-            <mat-form-field>
-                <input matInput formControlName="assunto" placeholder="Assunto" required>
-            </mat-form-field>
-            <mat-form-field>
-                <textarea matInput formControlName="mensagem" placeholder="Mensagem" rows="5" required></textarea>
-            </mat-form-field>
-            <div class="file-input">
-                <mat-label class="mat-form-field-file-label">Anexar Arquivo</mat-label>
-                <label for="fileInput" class="file-input-label">Selecionar Arquivo</label>
-                <input id="fileInput" type="file" (change)="onFileSelected($event)" accept=".pdf,.doc,.docx,.jpg,.png"
-                    class="file-input-element">
-                <span class="selected-file-name">{{ selectedFile ? selectedFile.name : 'Nenhum arquivo selecionado'
-                    }}</span>
-            </div>
-            <button mat-raised-button color="primary" (click)="enviarMensagem()">Enviar Mensagem</button>
-        </form>
-    </mat-card>
+<div class="container-start">
+    <div class="css-tc">
+        <div class="text-title">
+            <h1>TRABALHE CONOSCO</h1>
+        </div>
+    </div>
+    <div class="form-container">
+        <mat-card class="form-card">
+            <h2>Formulário Trabalhe Conosco</h2>
+            <form>
+                <mat-form-field appearance="outline">
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="Seu Nome" [formControl]="nome" required>
+                    <mat-error *ngIf="nome.invalid && nome.touched">{{getErrorMessage(nome)}}</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput placeholder="email@exemplo.com" [formControl]="email" required>
+                    <mat-error *ngIf="email.invalid && email.touched">{{getErrorMessage(email)}}</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Assunto</mat-label>
+                    <input matInput placeholder="Curriculum Vitae" [formControl]="assunto" required>
+                    <mat-error *ngIf="assunto.invalid && assunto.touched">{{getErrorMessage(assunto)}}</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Mensagem</mat-label>
+                    <textarea matInput placeholder="Digite aqui sua mensagem" rows="5" [formControl]="mensagem"
+                        required></textarea>
+                    <mat-error *ngIf="mensagem.invalid && mensagem.touched">{{getErrorMessage(mensagem)}}</mat-error>
+                </mat-form-field>
+                <div class="file-input">
+                    <mat-label class="mat-form-field-file-label">Anexar Arquivo</mat-label>
+                    <label for="fileInput" class="file-input-label">SELECIONAR ARQUIVO</label>
+                    <input id="fileInput" type="file" (change)="onFileSelected($event)"
+                        accept=".pdf,.doc,.docx,.jpg,.png" class="file-input-element" [formControl]="arquivo" required>
+                    <span class="selected-file-name">{{ selectedFile ? selectedFile.name : 'Nenhum arquivo selecionado'
+                        }}</span>
+                    <mat-error *ngIf="arquivo.invalid && arquivo.touched">Você deve selecionar um arquivo</mat-error>
+                </div>
+                <button class="botao-enviar" type="button" (click)="enviarMensagem()">ENVIAR MENSAGEM</button>
+            </form>
+        </mat-card>
+    </div>
 </div>

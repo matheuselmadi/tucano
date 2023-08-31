@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     background-color: #f0f0f0;
   }
   
@@ -21,7 +21,7 @@
   
   .mat-form-field {
     width: 100%;
-    margin-bottom: 30px; /* Adicione o espaço desejado */
+    margin-bottom: 10px; /* Adicione o espaço desejado */
   }
   
   .file-input-element {
@@ -35,8 +35,8 @@
   }
   
   /* Estilo para o rótulo do botão de enviar arquivo */
-.file-input-label {
-    background-color: #007bff;
+  .file-input-label {
+    background-color: #ffab0f;
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
@@ -46,7 +46,7 @@
   }
   
   .file-input-label:hover {
-    background-color: #0056b3;
+    background-color: #ff661f;
   }
   
   /* Esconder o input do tipo "file" */
@@ -58,3 +58,39 @@
     margin-top: -20px;
     margin-bottom: 20px;
   }
+
+  .botao-enviar {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+      margin-bottom: 20px;
+  }
+  
+  .botao-enviar:hover {
+    background-color: #ffab0f;
+    color: white;
+  }
+
+  .container-start {
+    margin-top: 120px;
+}
+
+.css-tc {
+    color: white;
+    background-color: #333;
+    height: 82px;
+}
+
+.text-title {
+    margin-left: 270px;
+    padding-top: 28px;
+}
+
+.text-title h1 {
+    font-size: 30px;
+}

@@ -15,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatNativeDateModule} from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
@@ -67,7 +68,8 @@ import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.co
     MatNativeDateModule,
     SlickCarouselModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
