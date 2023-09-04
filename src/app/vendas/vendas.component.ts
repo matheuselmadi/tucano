@@ -263,10 +263,15 @@ export class VendasComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.scrollToTop();
   }
 
   alterarEstado(estado: string) {
     this.estadoSelecionado = estado;
   }
 
+  scrollToTop() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+  
 }

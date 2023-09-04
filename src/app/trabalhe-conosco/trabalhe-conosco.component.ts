@@ -25,6 +25,15 @@ export class TrabalheConoscoComponent {
     this.cloudinaryInstance = cloudinary.Cloudinary.new({ cloud_name: 'deijay64k' });
   }
 
+  ngOnInit() {
+    // Navega para o topo quando o componente é iniciado (navegação interna)
+    this.scrollToTop();
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+
   async onFileSelected(event: any) {
     this.selectedFile = event.target.files[0];
 

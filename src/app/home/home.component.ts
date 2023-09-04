@@ -67,6 +67,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.startSlideInterval();
+    this.scrollToTop();
   }
 
   ngOnDestroy(): void {
@@ -95,4 +96,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
   }
 
+  scrollToTop() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+  
 }

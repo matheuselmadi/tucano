@@ -1,0 +1,200 @@
+.container-start {
+    margin-top: 120px;
+}
+
+.css-tc {
+    color: white;
+    background-color: #333;
+    height: 82px;
+}
+
+.text-title {
+    margin-left: 270px;
+    padding-top: 28px;
+}
+
+.text-title h1 {
+    font-size: 30px;
+}
+
+.contato {
+    text-align: center;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+.contato h2 {
+    font-size: 24px;
+}
+
+.contato p {
+    font-size: 16px;
+}
+
+/* Estilo para o bloco de vendedores */
+.dp-wrapper {
+    margin: 0 auto;
+    // position: absolute;
+    // bottom: 120px; /* Ajuste a posição vertical conforme necessário */
+    // left: 50%;
+    // transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 20px;
+    // z-index: 1; /* Coloque o bloco de vendedores acima do retângulo */
+    width: 80%; /* Ajuste a largura do bloco de vendedores conforme necessário */
+    max-width: 350px;/* Ajuste a largura máxima conforme necessário */
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); /* Adicione a sombra ao bloco */
+    text-align: center; /* Centralize o texto dentro do bloco */
+  }
+  
+  .dp-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .dp-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .dp-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .comercial {
+    margin: 0 auto;
+    // width: 25%; /* Ajuste a largura dos detalhes dos vendedores conforme necessário */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Tamanho de fonte para o nome dos vendedores */
+  .comercial h3 {
+    font-size: 22px;
+  }
+  
+  .comercial p {
+    margin: 12px 0;
+    font-size: 16px;
+  }
+  
+  .comercial a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .comercial a :hover {
+    color: #ffab0f;
+    font-weight: bold;
+  }
+
+  /* Estilo para o bloco de vendedores */
+.vendedores-wrapper {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  // position: absolute;
+  // bottom: 120px; /* Ajuste a posição vertical conforme necessário */
+  // left: 50%;
+  // transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 20px;
+  // z-index: 1; /* Coloque o bloco de vendedores acima do retângulo */
+  width: 80%; /* Ajuste a largura do bloco de vendedores conforme necessário */
+  max-width: 750px;/* Ajuste a largura máxima conforme necessário */
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); /* Adicione a sombra ao bloco */
+  text-align: center; /* Centralize o texto dentro do bloco */
+}
+
+.vendedores-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.vendedores-title {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.vendedores-container h3{
+  margin-bottom: 20px;
+}
+
+.vendedores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.vendedor {
+  width: 25%; /* Ajuste a largura dos detalhes dos vendedores conforme necessário */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Tamanho de fonte para o nome dos vendedores */
+.vendedor h3 {
+  font-size: 22px;
+}
+
+.vendedor p {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.vendedor a {
+  text-decoration: none;
+  color: black;
+}
+
+.vendedor a :hover {
+  color: #ffab0f;
+  font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63vh;
+  background-color: #f0f0f0;
+}
+
+.form-card {
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); /* Adicione a sombra ao bloco */
+}
+
+.form-card h2{
+  font-size: 24px;
+  color: black;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 10px; /* Adicione o espaço desejado */
+}
+
+.botao-enviar {
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px;
+}
+
+.botao-enviar:hover {
+  background-color: #ffab0f;
+  color: white;
+}
