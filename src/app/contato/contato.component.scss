@@ -160,7 +160,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 63vh;
+  height: 72vh;
   background-color: #f0f0f0;
 }
 
@@ -197,4 +197,10 @@
 .botao-enviar:hover {
   background-color: #ffab0f;
   color: white;
+}
+
+.recaptcha{
+  display: flex;
+  flex-direction: column; /* Alinhe verticalmente no meio */
+  align-items: center; /* Alinhe horizontalmente no meio */
 }

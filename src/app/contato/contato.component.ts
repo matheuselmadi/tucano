@@ -26,6 +26,9 @@ export class ContatoComponent implements OnInit {
   assunto = new FormControl('', [Validators.required]);
   mensagem = new FormControl('', [Validators.required]);
 
+  recaptchaResolved: boolean = false;
+  recaptchaError: boolean = false;
+
   constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
@@ -34,6 +37,13 @@ export class ContatoComponent implements OnInit {
 
   scrollToTop() {
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+
+  onCaptchaResolved(response: string): void {
+    // O reCAPTCHA foi resolvido, você pode fazer o que for necessário aqui.
+    console.log('reCAPTCHA resolved with response:', response);
+    this.recaptchaResolved = true;
+    this.recaptchaError = false;
   }
 
   enviarMensagem() {
@@ -45,24 +55,30 @@ export class ContatoComponent implements OnInit {
     };
 
     if (this.isFormValid()) {
-      // emailjs.send('service_ihktr4l', 'template_87kn41s', templateParams, 'cge2lNZwEDgtOa_cH')
-      //   .then(response => {
-      //     console.log('Mensagem enviada com sucesso!', response);
-      //     this.snackBar.open('E-mail enviado com sucesso!', '😊', {
-      //       duration: 3000, // Duração em milissegundos
-      //       panelClass: ['success-snackbar']
-      //     });
-      //   })
-      //   .catch(error => {
-      //     console.error('Erro ao enviar mensagem:', error);
-      //     this.snackBar.open('Erro ao enviar E-mail.', '😕', {
-      //       duration: 3000, // Duração em milissegundos
-      //       panelClass: ['error-snackbar']
-      //     });
-      //   });
-      console.log(templateParams)
+      if (this.recaptchaResolved) {
+        emailjs.send('service_ihktr4l', 'template_j0webrw', templateParams, 'cge2lNZwEDgtOa_cH')
+          .then(response => {
+            console.log('Mensagem enviada com sucesso!', response);
+            this.snackBar.open('E-mail enviado com sucesso!', '😊', {
+              duration: 3000, // Duração em milissegundos
+              panelClass: ['success-snackbar']
+            });
+          })
+          .catch(error => {
+            console.error('Erro ao enviar mensagem:', error);
+            this.snackBar.open('Erro ao enviar E-mail.', '😕', {
+              duration: 3000, // Duração em milissegundos
+              panelClass: ['error-snackbar']
+            });
+          });
+      } else {
+        this.recaptchaError = true;
+        this.snackBar.open('O reCAPTCHA não foi resolvido corretamente. Por favor, verifique e tente novamente.', '😕', {
+          duration: 3000, // Duração em milissegundos
+          panelClass: ['error-snackbar']
+        });
+      }
     } else {
-      // Se o formulário estiver inválido, marque os campos inválidos como tocados para que os erros sejam exibidos
       this.nome.markAsTouched();
       this.email.markAsTouched();
       this.assunto.markAsTouched();

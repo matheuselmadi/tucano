@@ -83,6 +83,8 @@
                         required></textarea>
                     <mat-error *ngIf="mensagem.invalid && mensagem.touched">{{getErrorMessage(mensagem)}}</mat-error>
                 </mat-form-field>
+                <re-captcha class="recaptcha" (resolved)="onCaptchaResolved($event)"></re-captcha>
+                <mat-error *ngIf="recaptchaError">Você deve verificar o reCAPTCHA</mat-error>
                 <button class="botao-enviar" type="button" (click)="enviarMensagem()">ENVIAR MENSAGEM</button>
             </form>
         </mat-card>
