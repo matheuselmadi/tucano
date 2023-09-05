@@ -1,5 +1,10 @@
 .container-start {
     margin-top: 120px;
+    overflow-x: hidden;
+}
+
+.container-start iframe {
+  vertical-align: middle;
 }
 
 .css-tc {
@@ -203,4 +208,48 @@
   display: flex;
   flex-direction: column; /* Alinhe verticalmente no meio */
   align-items: center; /* Alinhe horizontalmente no meio */
+}
+
+.css-localizacao-container {
+  margin-top: 20px;
+  background-color: #ffffff;
+  text-align: center; /* Centraliza horizontalmente o título */
+}
+
+.css-localizacao-title h2 {
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+.css-localizacao-content {
+  padding-left: 20%;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente o conteúdo da coluna */
+  flex-wrap: wrap; /* Permite que os elementos dentro do content se ajustem em telas menores */
+  width: 100%; /* Garante que o content ocupe toda a largura do container */
+  max-width: 1200px; /* Define uma largura máxima para o content */
+}
+
+.css-localizacao-imagem {
+  flex: 1; /* A imagem ocupará 1/3 do espaço disponível na coluna */
+}
+
+.css-localizacao-imagem img {
+  width: 500px;
+	height: 210px;
+}
+
+.css-localizacao-desc {
+  flex: 2; /* A descrição ocupará 2/3 do espaço disponível na coluna */
+  text-align: left; /* Alinha o texto à esquerda na coluna da descrição */
+  padding: 50px; /* Adiciona algum espaçamento à direita do texto */
+}
+
+.css-localizacao-desc h2 {
+  font-size: 22px;
+}
+
+.css-localizacao-desc p {
+  font-size: 16px;
 }
