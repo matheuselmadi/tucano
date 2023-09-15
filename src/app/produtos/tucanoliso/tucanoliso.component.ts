@@ -9,54 +9,33 @@ export class TucanolisoComponent implements OnInit {
 
   opcoes: any[] = [
     {
-      title: 'ANELAR (AN-ECCO)',
-      description: 'Tubo para drenagem do solo Ecologicamente Correto da Tucano, possui formato anelar e alto padrão de rigidez, produzido com matéria prima reciclada ecologicamente correta (ECCO).',
+      title: 'PEMD 1/2" - 2"',
+      description: 'Tubo liso da Tucano possui um alto padrão produzido com material de média densidade.',
       // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_1'
     },
     {
-      title: 'ANELAR (AN-NBR)',
-      description: 'Tubo para drenagem do solo Normatizado da Tucano, produzido em forma de anéis (anelar) a partir de matéria prima virgem (NBR).',
+      title: 'PEAD 1/2" - 315mm',
+      description: 'O tubo liso fabricado pela Tucano apresenta um elevado nível de qualidade, sendo produzido com material de alta densidade.',
       // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_2'
     },
   ];
 
   accessories: any[] = [
     {
-      title: 'Camisa Geotêxtil',
-      description: 'Espécie de tecido que tem como finalidade proteger os tubos de drenagem das partículas do solo que possam obstruir (entupir, tampar) suas aberturas bloqueando a captação e a vazão de água.',
-      imageUrl: 'assets/images/acessorios/camisa.jpg'
+      title: 'Conexões Internas',
+      description: 'As conexões são peças destinadas a conectar as tubulações de todo o sistema de irrigação.',
+      imageUrl: 'assets/images/acessorios/uniao.png'
     },
     {
-      title: 'Cruzeta de Emenda',
-      description: 'Conexão utilizada para dividir as ramificações dos tubos de drenagem em formato de X.',
-      imageUrl: 'assets/images/acessorios/cruzeta.jpg'
+      title: 'Conexão de Compreção',
+      description: 'As conexões de compressão vêm em diferentes formas, o que facilita sua versatilidade na conexão de tubulações. São fabricadas no material PP nos diâmetros DE 20 a 110 mm.',
+      imageUrl: 'assets/images/acessorios/irritec.jpg'
     },
     {
-      title: 'Junção de Emenda em Y',
-      description: 'Conexão utilizada para dividir as ramificações dos tubos de drenagem em formato de Y.',
-      imageUrl: 'assets/images/acessorios/juncao.jpg'
+      title: 'Solda Termofusão',
+      description: 'A solda por termofusão consiste em aquecer as extremidades dos tubos com uma placa de aquecimento e aplicar uma pressão normalizada. As soldas são mais usadas em tubos com diâmetros maiores (63-315 mm).',
+      imageUrl: 'assets/images/acessorios/temofusao.JPG'
     },
-    {
-      title: 'Manta Geotêxtil',
-      description: 'Material permeável que possui a capacidade de drenar, filtrar e separar resíduos, e utilizada principalmente para evitar danos ao solo e na proteção e reforço de tubos e outros materiais.',
-      imageUrl: 'assets/images/acessorios/manta.jpg'
-    },
-    {
-      title: 'Redução de Emenda',
-      description: 'Conexão utilizada para fazer reduções de tubos de maiores polegadas para tubos de menores polegadas.',
-      imageUrl: 'assets/images/acessorios/reducao.jpg'
-    },
-    {
-      title: 'Tampão',
-      description: 'É utilizado para fechar o eletroduto isolando-os contra a entrada de água, animais ou insetos.',
-      imageUrl: 'assets/images/acessorios/tampao.jpg'
-    },
-    {
-      title: 'TE de Emenda',
-      description: 'Conexão utilizada para conectar tubos de drenagem em formato de TE.',
-      imageUrl: 'assets/images/acessorios/te.jpg'
-    },
-    // Adicione mais acessórios conforme necessário
   ];
 
   constructor() { }

@@ -1,1 +1,15 @@
-<p>acessorios works!</p>
+<div class="container">
+    <div class="header-container">
+        <h1>Lista de Produtos</h1>
+      </div>
+
+    <mat-card *ngFor="let product of products" class="product-card" (click)="redirectToProduct(product.id)">
+        <img mat-card-image src="{{ product.imageUrl }}" alt="{{ product.name }}">
+        <mat-card-header>
+            <mat-card-title>{{ product.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            {{ product.description }}
+        </mat-card-content>
+    </mat-card>
+</div>

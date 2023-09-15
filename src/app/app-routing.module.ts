@@ -22,7 +22,7 @@ const routes: Routes = [
   {path:"tucanoduto", component:TucanodutoComponent},
   {path:"tucanoliso", component:TucanolisoComponent},
   {path:"manilha", component:ManilhaComponent},
-  {path:"acessorios", component:AcessoriosComponent},
+  {path:"todos", component:AcessoriosComponent},
   {path:"vendas", component:VendasComponent},
   {path:"contato", component:ContatoComponent},
   {path:"sustentabilidade", component:SustentabilidadeComponent},
