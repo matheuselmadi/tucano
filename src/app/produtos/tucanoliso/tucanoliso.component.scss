@@ -1,0 +1,199 @@
+.product-container {
+    margin-top: 120px;
+    display: flex;
+    background-color: #333;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    height: 500px; /* Defina a altura desejada para o container */
+  }
+  
+  .product-info {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    max-width: 30%; /* Define a largura máxima do .product-info para 40% do container */
+  }
+  
+  .product-image {
+    flex: 1;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: 500px;
+  }
+  
+  .product-details {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .product-details h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .detail h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .detail p{
+    font-size: 20px;
+  }
+  
+  .accessories {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .accessories h3 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .accessories h5 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .accessory-card {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 400px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); /* Adicione a sombra ao bloco */
+    margin-bottom: 20px;
+  }
+
+  .accessory-card img {
+    max-width: 100%; /* Define a largura máxima da imagem como 100% do card */
+    max-height: 200px; /* Define a altura máxima da imagem, ajuste conforme necessário */
+    width: auto;
+    height: auto;
+  }
+  
+  .info-content h2 {
+    margin-bottom: 44px;
+    font-size: 42px;
+  }
+
+  .info-content p {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+
+  .opcoes {
+    text-align: center;
+  }
+
+  .opcoes h3 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .opcoes-card {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 400px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); /* Adicione a sombra ao bloco */
+  }
+
+  .full-width-container {
+    background-color: #ff661f;
+    color: white;
+    text-align: center;
+  }
+  
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .left-content img {
+    max-width: 100%;
+    max-height: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .right-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .full-width-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .full-width-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .download-button-info {
+    background-color: white;
+    color: #ff661f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .download-button-info:hover {
+    background-color: #ffab0f;
+    color: white;
+  }
+
+  .download-button-ficha {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .download-button-ficha:hover {
+    background-color: #ffab0f;
+    color: white;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
