@@ -5,13 +5,19 @@
 /* Estilos para o cabeçalho */
 .header-container {
     background-color: #ff6600; /* Cor de fundo laranja */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 15vh; /* Defina uma altura para ocupar a tela inteira verticalmente */
+  }
+  
+  .header-content {
     text-align: center; /* Texto centralizado horizontalmente */
-    padding: 20px; /* Espaçamento interno para o cabeçalho */
   }
   
   .header-container h1 {
     color: #fff; /* Cor do texto branco */
-    font-size: 1.5rem; /* Tamanho da fonte */
+    font-size: 30px; /* Tamanho da fonte */
   }
   
   /* Estilos para o container da lista de produtos */
@@ -20,33 +26,32 @@
     flex-wrap: wrap; /* Permite que os cards de produtos se ajustem automaticamente em várias linhas */
     justify-content: center; /* Centraliza os cards horizontalmente */
     gap: 20px; /* Espaçamento entre os cards de produtos */
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  
-  /* Estilos para os cards de produtos (mantenha os estilos anteriores) */
+
   .product-card {
     max-width: 300px;
     cursor: pointer;
     transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos verticalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
   }
   
   .product-card:hover {
     transform: scale(1.05);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); /* Adicione a sombra ao bloco */
   }
   
-  mat-card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-bottom: 10px;
+  .product-content {
+    flex-grow: 1; /* Expande para preencher o espaço restante no card */
   }
   
-  mat-card-content {
-    font-size: 1rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  .product-image img {
+    max-width: 200px; /* Largura máxima da imagem */
+    max-height: 200px; /* Altura máxima da imagem */
   }
   
   /* Estilos para tornar os cards responsivos */
@@ -56,3 +61,88 @@
     }
   }
   
+  .full-width-container {
+    background-color: #ff661f;
+    color: white;
+    text-align: center;
+  }
+  
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .left-content img {
+    max-width: 100%;
+    max-height: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .right-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .full-width-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .full-width-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .download-button-info {
+    background-color: white;
+    color: #ff661f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .download-button-info:hover {
+    background-color: #ffab0f;
+    color: white;
+  }
+
+  .download-button-ficha {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .download-button-ficha:hover {
+    background-color: #ffab0f;
+    color: white;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

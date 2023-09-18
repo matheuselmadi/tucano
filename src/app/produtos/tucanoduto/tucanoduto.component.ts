@@ -61,7 +61,7 @@ export class TucanodutoComponent implements OnInit {
   }
 
   downloadPDF() {
-    const pdfUrl = 'caminho-para-o-seu-arquivo.pdf'; // Substitua pelo caminho real do seu arquivo PDF
+    const pdfUrl = 'assets/files/Informações-Técnicas-Tucano-Duto.pdf'; // Substitua pelo caminho real do seu arquivo PDF
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'Informações-Técnicas-Tucano-Duto.pdf'; // O nome que o arquivo terá ao ser baixado

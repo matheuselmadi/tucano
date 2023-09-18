@@ -1,15 +1,34 @@
 <div class="container">
     <div class="header-container">
-        <h1>Lista de Produtos</h1>
-      </div>
+        <div class="header-content">
+            <h1>Lista de <strong>Produtos</strong></h1>
+        </div>
+    </div>
+    <div class="product-list-container">
+        <mat-card *ngFor="let product of products" class="product-card" (click)="redirectToProduct(product.id)">
+            <div class="product-image">
+                <img src="{{ product.imageUrl }}" alt="{{ product.name }}">
+            </div>
+            <mat-card-content class="product-content">
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.description }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
 
-    <mat-card *ngFor="let product of products" class="product-card" (click)="redirectToProduct(product.id)">
-        <img mat-card-image src="{{ product.imageUrl }}" alt="{{ product.name }}">
-        <mat-card-header>
-            <mat-card-title>{{ product.name }}</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-            {{ product.description }}
-        </mat-card-content>
-    </mat-card>
+    <div class="full-width-container">
+        <div class="content-container">
+            <div class="left-content">
+                <img src="assets/images/cat.png" alt="Imagem do Produto">
+            </div>
+            <div class="right-content">
+                <h2>CATÁLOGO</h2>
+                <p>Você pode baixar nosso <STRONG>catálogo completo</STRONG>, com todos os nossos produtos
+                    <strong>TUCANO®</strong> e suas informações!</p>
+                <div class="button-container">
+                    <button class="download-button-ficha" (click)="downloadPDF()">BAIXAR CATÁLOGO</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
