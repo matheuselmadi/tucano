@@ -36,6 +36,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { FooterComponent } from './footer/footer.component';
 import { SustentabilidadeComponent } from './sustentabilidade/sustentabilidade.component';
 import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
+import { CaixaPassagemComponent } from './produtos/caixa-passagem/caixa-passagem.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.co
     ContatoComponent,
     FooterComponent,
     SustentabilidadeComponent,
-    TrabalheConoscoComponent
+    TrabalheConoscoComponent,
+    CaixaPassagemComponent
   ],
   imports: [
     BrowserAnimationsModule,

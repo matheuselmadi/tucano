@@ -135,6 +135,9 @@ export class AcessoriosComponent implements OnInit {
     if (productId === 4) {
       this.router.navigate(['/manilha']); // Redirecionar para a página do produto com o ID correspondente
     }
+    if (productId === 5) {
+      this.router.navigate(['/caixa-passagem']); // Redirecionar para a página do produto com o ID correspondente
+    }
   }
 
   downloadPDF() {

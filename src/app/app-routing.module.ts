@@ -13,20 +13,22 @@ import { VendasComponent } from './vendas/vendas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { SustentabilidadeComponent } from './sustentabilidade/sustentabilidade.component';
 import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
+import { CaixaPassagemComponent } from './produtos/caixa-passagem/caixa-passagem.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'home'},
-  {path:"home", component:HomeComponent},
-  {path:"institucional", component:InstitucionalComponent},
-  {path:"tucanodreno", component:TucanodrenoComponent},
-  {path:"tucanoduto", component:TucanodutoComponent},
-  {path:"tucanoliso", component:TucanolisoComponent},
-  {path:"manilha", component:ManilhaComponent},
-  {path:"todos", component:AcessoriosComponent},
-  {path:"vendas", component:VendasComponent},
-  {path:"contato", component:ContatoComponent},
-  {path:"sustentabilidade", component:SustentabilidadeComponent},
-  {path:"trabalhe-conosco", component:TrabalheConoscoComponent}
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: "home", component: HomeComponent },
+  { path: "institucional", component: InstitucionalComponent },
+  { path: "tucanodreno", component: TucanodrenoComponent },
+  { path: "tucanoduto", component: TucanodutoComponent },
+  { path: "tucanoliso", component: TucanolisoComponent },
+  { path: "manilha", component: ManilhaComponent },
+  { path: "todos", component: AcessoriosComponent },
+  { path: "vendas", component: VendasComponent },
+  { path: "contato", component: ContatoComponent },
+  { path: "sustentabilidade", component: SustentabilidadeComponent },
+  { path: "trabalhe-conosco", component: TrabalheConoscoComponent },
+  { path: "caixa-passagem", component: CaixaPassagemComponent }
 ];
 
 
