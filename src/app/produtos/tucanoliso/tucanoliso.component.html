@@ -43,7 +43,7 @@
     <h5>Além da linha TUCANOLISO® a Tucano disponibiliza acessórios que complementam seus
         produtos e tornam sua obra
         mais segura e perfeita.</h5>
-    <div class="accessory-card" *ngFor="let accessory of accessories">
+    <div class="accessory-card" *ngFor="let accessory of accessories" (click)="redirectToProduct(accessory.id)">
         <mat-card>
             <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}">
             <mat-card-content>

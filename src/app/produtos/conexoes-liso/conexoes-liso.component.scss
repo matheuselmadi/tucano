@@ -44,6 +44,10 @@
     font-weight: bold;
   }
 
+  .detail {
+    padding-bottom: 10px;
+  }
+
   .detail h4 {
     font-size: 22px;
     font-weight: bold;
@@ -75,7 +79,6 @@
     width: 400px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); /* Adicione a sombra ao bloco */
     margin-bottom: 20px;
-    cursor: pointer;
   }
 
   .accessory-card img {

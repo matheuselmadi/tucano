@@ -37,6 +37,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SustentabilidadeComponent } from './sustentabilidade/sustentabilidade.component';
 import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 import { CaixaPassagemComponent } from './produtos/caixa-passagem/caixa-passagem.component';
+import { ConexoesLisoComponent } from './produtos/conexoes-liso/conexoes-liso.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { CaixaPassagemComponent } from './produtos/caixa-passagem/caixa-passagem
     FooterComponent,
     SustentabilidadeComponent,
     TrabalheConoscoComponent,
-    CaixaPassagemComponent
+    CaixaPassagemComponent,
+    ConexoesLisoComponent
   ],
   imports: [
     BrowserAnimationsModule,

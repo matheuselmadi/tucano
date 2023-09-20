@@ -95,11 +95,13 @@ export class AcessoriosComponent implements OnInit {
       imageUrl: 'assets/images/acessorios/tampao.jpg'
     },
     {
+      id: 6,
       name: 'Conexões Internas',
       description: 'As conexões são peças destinadas a conectar as tubulações de todo o sistema de irrigação.',
       imageUrl: 'assets/images/acessorios/uniao.png'
     },
     {
+      id: 6,
       name: 'Conexão de Compreção',
       description: 'As conexões de compressão vêm em diferentes formas, o que facilita sua versatilidade na conexão de tubulações. São fabricadas no material PP nos diâmetros DE 20 a 110 mm.',
       imageUrl: 'assets/images/acessorios/irritec.jpg'
@@ -137,6 +139,9 @@ export class AcessoriosComponent implements OnInit {
     }
     if (productId === 5) {
       this.router.navigate(['/caixa-passagem']); // Redirecionar para a página do produto com o ID correspondente
+    }
+    if (productId === 6) {
+      this.router.navigate(['/conexoes-liso']); // Redirecionar para a página do produto com o ID correspondente
     }
   }
 

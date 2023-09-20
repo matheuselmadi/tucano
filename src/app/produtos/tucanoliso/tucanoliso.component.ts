@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tucanoliso',
@@ -22,11 +23,13 @@ export class TucanolisoComponent implements OnInit {
 
   accessories: any[] = [
     {
+      id: 1,
       title: 'Conexões Internas',
       description: 'As conexões são peças destinadas a conectar as tubulações de todo o sistema de irrigação.',
       imageUrl: 'assets/images/acessorios/uniao.png'
     },
     {
+      id: 1,
       title: 'Conexão de Compreção',
       description: 'As conexões de compressão vêm em diferentes formas, o que facilita sua versatilidade na conexão de tubulações. São fabricadas no material PP nos diâmetros DE 20 a 110 mm.',
       imageUrl: 'assets/images/acessorios/irritec.jpg'
@@ -38,7 +41,7 @@ export class TucanolisoComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.scrollToTop();
@@ -54,6 +57,12 @@ export class TucanolisoComponent implements OnInit {
     link.href = pdfUrl;
     link.download = 'Informações-Técnicas-Tucano-Duto.pdf'; // O nome que o arquivo terá ao ser baixado
     link.click();
+  }
+
+  redirectToProduct(productId: number) {
+    if (productId === 1) {
+      this.router.navigate(['/conexoes-liso']); // Redirecionar para a página do produto com o ID correspondente
+    }
   }
 
 }
