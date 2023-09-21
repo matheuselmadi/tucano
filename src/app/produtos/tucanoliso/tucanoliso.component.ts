@@ -41,6 +41,34 @@ export class TucanolisoComponent implements OnInit {
     },
   ];
 
+  photos = [
+    {
+      imageUrl: 'assets/images/acessorios/irritec.jpg',
+      caption: 'Foto 1',
+      info: 'Informações sobre a Foto 1',
+      showInfo: true
+    },
+    {
+      imageUrl: 'assets/images/acessorios/temofusao.JPG',
+      caption: 'Foto 2',
+      info: 'Informações sobre a Foto 2',
+      showInfo: true
+    },
+    {
+      imageUrl: 'assets/images/acessorios/temofusao.JPG',
+      caption: 'Foto 2',
+      info: 'Informações sobre a Foto 2',
+      showInfo: true
+    },
+    {
+      imageUrl: 'assets/images/acessorios/temofusao.JPG',
+      caption: 'Foto 2',
+      info: 'Informações sobre a Foto 2',
+      showInfo: true
+    },
+    // Adicione mais fotos aqui
+  ];
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -63,6 +91,10 @@ export class TucanolisoComponent implements OnInit {
     if (productId === 1) {
       this.router.navigate(['/conexoes-liso']); // Redirecionar para a página do produto com o ID correspondente
     }
+  }
+
+  navigateToDetails(photo:any) {
+    // Lógica para navegar para outro componente quando uma foto é clicada
   }
 
 }

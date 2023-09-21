@@ -19,22 +19,41 @@
             resíduos industriais e mineração. Inclui redes de distribuição de água, transporte de esgoto, sistemas de
             irrigação eficientes, manutenção de tubulações e gerenciamento de chorume em aterros sanitários.</p>
     </div>
-    <!-- <div class="detail">
-      <h4>Detalhe 2</h4>
-      <p>Descrição do Detalhe 2</p>
-    </div> -->
+    <div class="detail">
+        <h4>Liso Perfurado</h4>
+        <p>Os tubos lisos desempenham um papel fundamental na gestão eficaz de resíduos em aterros sanitários.
+            Fabricados com materiais duráveis e resistentes à corrosão, esses tubos são projetados para garantir o fluxo
+            eficiente de líquidos lixiviados e gases no interior do aterro.</p>
+        <p>Esses componentes essenciais proporcionam uma solução de drenagem confiável, minimizando o risco de
+            contaminação ambiental. Seu design liso e resistente à obstrução ajuda a manter a integridade do aterro
+            sanitário e a preservar o meio ambiente.</p>
+        <p>Os tubos lisos são uma escolha sólida para a gestão responsável de resíduos, contribuindo para um processo de
+            aterramento mais eficiente e sustentável.</p>
+    </div>
 </div>
 
-<div class="opcoes">
+<div class="opcoes-container">
     <h3>Opções do Tubo</h3>
-    <div class="opcoes-card" *ngFor="let opcao of opcoes">
-        <mat-card>
-            <!-- <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}"> -->
-            <mat-card-content>
-                <h4><strong>{{ opcao.title }}</strong></h4>
-                <p>{{ opcao.description }}</p>
-            </mat-card-content>
-        </mat-card>
+    <div class="opcoes">
+        <div class="opcoes-card" *ngFor="let opcao of opcoes">
+            <mat-card>
+                <!-- <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}"> -->
+                <mat-card-content>
+                    <h4><strong>{{ opcao.title }}</strong></h4>
+                    <p>{{ opcao.description }}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<div class="photo-gallery">
+    <div class="photo" *ngFor="let photo of photos">
+        <img src="{{ photo.imageUrl }}" alt="{{ photo.caption }}" (click)="navigateToDetails(photo)">
+        <div class="caption">{{ photo.caption }}</div>
+        <div class="info-box" *ngIf="photo.showInfo">
+            {{ photo.info }}
+        </div>
     </div>
 </div>
 
