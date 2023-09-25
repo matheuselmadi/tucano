@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   currentImageIndex: number = 0;
   private slideInterval: any;
   private readonly intervalTime = 10000; // Defina o tempo em milissegundos (5 segundos, por exemplo)
+  currentIndex = 0;
 
   images = [
     {
@@ -63,11 +64,28 @@ export class HomeComponent implements OnInit, OnDestroy {
     // Adicione mais vendedores conforme necessário
   ];
 
+  photos = [
+    {
+      imageUrl: 'assets/images/solda.jpeg',
+      caption: 'Serviço de Solda',
+      info: 'Informações sobre a Foto 1',
+      showInfo: false
+    },
+    {
+      imageUrl: 'assets/images/fossa.jpeg',
+      caption: 'Limpa fossa',
+      info: 'Informações sobre a Foto 2',
+      showInfo: false
+    },
+    // Adicione mais fotos aqui
+  ];
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.startSlideInterval();
     this.scrollToTop();
+    this.setupCarousel();
   }
 
   ngOnDestroy(): void {
@@ -99,5 +117,47 @@ export class HomeComponent implements OnInit, OnDestroy {
   scrollToTop() {
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   }
-  
+
+  setupCarousel() {
+    const prevButton = document.querySelector(".prev-button");
+    const nextButton = document.querySelector(".next-button");
+    const carousel = document.querySelector(".carousel");
+
+    if (!prevButton || !nextButton || !carousel) {
+      return; // Exit if elements are not found
+    }
+
+    // Função para avançar para o próximo slide
+    const nextSlide = () => {
+      this.currentIndex = (this.currentIndex + 1) % carousel.children.length;
+      this.updateCarousel();
+    };
+
+    // Função para retroceder para o slide anterior
+    const prevSlide = () => {
+      this.currentIndex = (this.currentIndex - 1 + carousel.children.length) % carousel.children.length;
+      this.updateCarousel();
+    };
+
+    // Atualiza a posição do carousel
+    this.updateCarousel();
+
+    // Adicione os ouvintes de eventos aos botões de navegação
+    prevButton.addEventListener("click", prevSlide);
+    nextButton.addEventListener("click", nextSlide);
+  }
+
+  // Atualiza a posição do carousel
+  updateCarousel() {
+    const carousel = document.querySelector(".carousel") as HTMLElement;
+    const offset = -this.currentIndex * 350; // 320 é a largura de cada slide
+    if (carousel) {
+      carousel.style.transform = `translateX(${offset}px)`;
+    }
+  }
+
+  navigateToDetails(photo: any) {
+    // Lógica para navegar para outro componente quando uma foto é clicada
+  }
+
 }

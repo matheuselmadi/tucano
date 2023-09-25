@@ -43,28 +43,28 @@ export class TucanolisoComponent implements OnInit {
 
   photos = [
     {
-      imageUrl: 'assets/images/acessorios/irritec.jpg',
-      caption: 'Foto 1',
+      imageUrl: 'assets/images/irrigacao.jpg',
+      caption: 'Irrigação Agrícola',
       info: 'Informações sobre a Foto 1',
-      showInfo: true
+      showInfo: false
     },
     {
-      imageUrl: 'assets/images/acessorios/temofusao.JPG',
-      caption: 'Foto 2',
+      imageUrl: 'assets/images/abastecimento.jpg',
+      caption: 'Rede de Abastecimento',
       info: 'Informações sobre a Foto 2',
-      showInfo: true
+      showInfo: false
     },
     {
-      imageUrl: 'assets/images/acessorios/temofusao.JPG',
-      caption: 'Foto 2',
+      imageUrl: 'assets/images/mineracao.jpg',
+      caption: 'Mineração',
       info: 'Informações sobre a Foto 2',
-      showInfo: true
+      showInfo: false
     },
     {
-      imageUrl: 'assets/images/acessorios/temofusao.JPG',
-      caption: 'Foto 2',
+      imageUrl: 'assets/images/chorume.jpeg',
+      caption: 'Gerenciamento de Chorume 75mm - 315mm',
       info: 'Informações sobre a Foto 2',
-      showInfo: true
+      showInfo: false
     },
     // Adicione mais fotos aqui
   ];

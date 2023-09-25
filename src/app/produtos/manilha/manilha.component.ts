@@ -59,6 +59,34 @@ export class ManilhaComponent implements OnInit {
   //   // Adicione mais acessórios conforme necessário
   // ];
 
+  photos = [
+    {
+      imageUrl: 'assets/images/drenagem-pluvial.jpg',
+      caption: 'Drenagem Pluvial',
+      info: 'Informações sobre a Foto 1',
+      showInfo: false
+    },
+    {
+      imageUrl: 'assets/images/represa.jpg',
+      caption: 'Extravasores de Represas',
+      info: 'Informações sobre a Foto 2',
+      showInfo: false
+    },
+    {
+      imageUrl: 'assets/images/mineracao.jpg',
+      caption: 'Obras de Contenção',
+      info: 'Informações sobre a Foto 2',
+      showInfo: false
+    },
+    {
+      imageUrl: 'assets/images/chorume.jpeg',
+      caption: 'Gerenciamento de Chorume 75mm - 315mm',
+      info: 'Informações sobre a Foto 2',
+      showInfo: false
+    },
+    // Adicione mais fotos aqui
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -75,6 +103,10 @@ export class ManilhaComponent implements OnInit {
     link.href = pdfUrl;
     link.download = 'Informações-Técnicas-Tucano-Duto.pdf'; // O nome que o arquivo terá ao ser baixado
     link.click();
+  }
+
+  navigateToDetails(photo: any) {
+    // Lógica para navegar para outro componente quando uma foto é clicada
   }
 
 }

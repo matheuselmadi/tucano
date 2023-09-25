@@ -44,6 +44,16 @@
     </div>
 </div>
 
+<div class="photo-gallery">
+    <div class="photo" *ngFor="let photo of photos">
+        <img src="{{ photo.imageUrl }}" alt="{{ photo.caption }}" (click)="navigateToDetails(photo)">
+        <div class="caption">{{ photo.caption }}</div>
+        <div class="info-box" *ngIf="photo.showInfo">
+            {{ photo.info }}
+        </div>
+    </div>
+</div>
+
 <!-- <div class="accessories">
     <h3>Acessórios para o Tubo</h3>
     <h5>Além da linha TUCANODRENO® a Tucano disponibiliza em sua linha de drenagem, acessórios que complementam seus

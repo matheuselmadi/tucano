@@ -249,19 +249,27 @@
 }
 
 .produtos-container {
-  position: absolute;
   padding: 40px;
-  margin-top: 350px;
-  left: 50%;
-  transform: translateX(-50%);
   text-align: center;
+  padding-top: 370px;
+  width: 900px; /* Defina a largura desejada */
+  margin: 0 auto; /* Centralize o container horizontalmente */
+  overflow: hidden; /* Certifique-se de que o overflow é oculto para evitar problemas de layout */
 }
 
-.produtos-list {
+.product-carousel {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+}
+
+.carousel {
+  margin: 30px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .produto-card {
@@ -269,18 +277,28 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  width: calc(45% - 10px);
+  width: 350px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.produto-card:last-child {
+  margin-right: 100px;
 }
 
 .produto-card:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05); /* Efeito de escala no hover */
 }
 
 .produto-card img {
   max-width: 100%;
   height: auto;
+  // width: 200px; /* Defina a largura desejada */
+  // height: 200px; /* Defina a altura desejada */
+  // object-fit: cover; /* Isso ajuda a manter a proporção correta, cortando o excesso */
   border-radius: 4px;
   margin-bottom: 10px;
 }
@@ -299,6 +317,27 @@
 }
 
 .info span {
+  font-weight: bold;
+}
+
+.carousel-navigation {
+  text-align: center;
+ 
+}
+
+.prev-button,
+.next-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-button {
+  margin-right: 20px;
+}
+
+.active {
   font-weight: bold;
 }
 
@@ -321,14 +360,24 @@ p {
   margin-bottom: 20px;
 }
 
+.servicos-container {
+  // padding: 40px;
+  text-align: center;
+  // padding-top: 370px;
+  width: 900px; /* Defina a largura desejada */
+  margin: 0 auto; /* Centralize o container horizontalmente */
+  overflow: hidden; /* Certifique-se de que o overflow é oculto para evitar problemas de layout */
+}
+
 .materia-prima {
-  margin-top: 1050px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  // margin-top: 1050px;
+  // position: absolute;
+  // left: 50%;
+  // transform: translateX(-50%);
   padding: 50px;
-  max-width: 900px; /* Ajuste a largura máxima conforme necessário */
+  width: 900px; 
   text-align: center; /* Centralize o texto dentro do bloco */
+  margin: 0 auto;
 }
 
 .materia-prima h2 {
@@ -346,7 +395,7 @@ p {
 
 /* Estilo para o banner */
 .banner {
-  margin-top: 1700px;
+  // margin-top: 1700px;
   height: 6cm;
   background-color: #ff661f;
   width: 100%;
@@ -396,4 +445,91 @@ p {
   color: white;
 }
 
+.two-column-list {
+  display: flex;
+  justify-content: space-between;
+}
 
+.column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.photo-gallery {
+  margin-top: 5px; /* Espaço acima da div */
+  margin-bottom: 60px; /* Espaço abaixo da div */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centralize as fotos horizontalmente */
+  align-items: center; /* Centralize as fotos verticalmente */
+  gap: 10px;
+}
+
+.photo {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 350px; /* Defina a largura desejada para todas as fotos */
+  height: 250px; /* Defina a altura desejada para todas as fotos */
+  margin: 10px; /* Espaçamento entre as fotos */
+  
+}
+
+.photo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%; /* Garante que a imagem preencha o contêiner */
+  height: 100%; /* Garante que a imagem preencha o contêiner */
+  object-fit: cover; /* Mantém a proporção e corta as imagens para caber no contêiner */
+}
+
+.caption {
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  height: 30px;
+  display: flex; /* Transformamos o elemento em um flex container */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+}  
+
+.info-box {
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transition: bottom 0.3s;
+  opacity: 0; /* Inicialmente, as informações são invisíveis */
+}
+
+.photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo:hover .info-box {
+  bottom: 0;
+  opacity: 1; /* Torna as informações visíveis quando o mouse está sobre a foto */
+}
+
+.photo:active {
+  transform: scale(1);
+  box-shadow: none;
+}
