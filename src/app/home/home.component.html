@@ -1,6 +1,6 @@
 <div class="slide-container">
   <div class="slide-item" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentImageIndex }">
-    <div *ngIf="i === 0" class="new-badge">NOVIDADE</div>
+    <div *ngIf="image.novidade" class="new-badge">NOVIDADE</div>
     <img [src]="image.src" [alt]="image.alt" />
     <div class="slide-content">
       <h2>{{ image.title }}</h2>
@@ -199,7 +199,7 @@
       </div>
     </div>
   </div>
-  <button mat-stroked-button routerLink="/vendas" routerLinkActive="active">CONFIRA TODOS OS NOSSOS SERVIÇOS</button>
+  <button mat-stroked-button routerLink="/servicos" routerLinkActive="active">CONFIRA TODOS OS NOSSOS SERVIÇOS</button>
 </div>
 
 <div class="materia-prima">

@@ -38,6 +38,7 @@ import { SustentabilidadeComponent } from './sustentabilidade/sustentabilidade.c
 import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 import { CaixaPassagemComponent } from './produtos/caixa-passagem/caixa-passagem.component';
 import { ConexoesLisoComponent } from './produtos/conexoes-liso/conexoes-liso.component';
+import { ServicoComponent } from './servico/servico.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { ConexoesLisoComponent } from './produtos/conexoes-liso/conexoes-liso.co
     SustentabilidadeComponent,
     TrabalheConoscoComponent,
     CaixaPassagemComponent,
-    ConexoesLisoComponent
+    ConexoesLisoComponent,
+    ServicoComponent
   ],
   imports: [
     BrowserAnimationsModule,

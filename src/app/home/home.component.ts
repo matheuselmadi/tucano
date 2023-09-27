@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       title: 'TUCANOLISO®',
       description: 'Linha de tubos lisos da Tucano.',
       buttonText: 'SAIBA MAIS',
+      novidade: true,
       buttonAction: () => {
         this.router.navigate(['/tucanoliso']);
       }
@@ -53,6 +54,17 @@ export class HomeComponent implements OnInit, OnDestroy {
       buttonAction: () => {
         this.router.navigate(['/manilha']);
       }
+    },
+    {
+      src: 'assets/images/slide5.png',
+      alt: 'SERVIÇOS',
+      title: 'SERVIÇOS',
+      description: 'Nossa empresa se destaca pela excelência na prestação de serviços.',
+      buttonText: 'SAIBA MAIS',
+      novidade: true,
+      buttonAction: () => {
+        this.router.navigate(['/servicos']);
+      }
     }
   ];
 
@@ -66,12 +78,14 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   photos = [
     {
+      id: 1,
       imageUrl: 'assets/images/solda.jpeg',
       caption: 'Serviço de Solda',
       info: 'Informações sobre a Foto 1',
       showInfo: false
     },
     {
+      id: 1,
       imageUrl: 'assets/images/fossa.jpeg',
       caption: 'Limpa fossa',
       info: 'Informações sobre a Foto 2',
@@ -157,7 +171,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   navigateToDetails(photo: any) {
-    // Lógica para navegar para outro componente quando uma foto é clicada
+    if (photo.id === 1) {
+      this.router.navigate(['/servicos']);
+    }
   }
 
 }

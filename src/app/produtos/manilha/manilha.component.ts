@@ -73,14 +73,14 @@ export class ManilhaComponent implements OnInit {
       showInfo: false
     },
     {
-      imageUrl: 'assets/images/mineracao.jpg',
+      imageUrl: 'assets/images/contencao.jpeg',
       caption: 'Obras de Contenção',
       info: 'Informações sobre a Foto 2',
       showInfo: false
     },
     {
-      imageUrl: 'assets/images/chorume.jpeg',
-      caption: 'Gerenciamento de Chorume 75mm - 315mm',
+      imageUrl: 'assets/images/rodovia.jpeg',
+      caption: 'Rodovias, Ferrovias e Subsolos',
       info: 'Informações sobre a Foto 2',
       showInfo: false
     },

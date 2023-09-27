@@ -15,6 +15,7 @@ import { SustentabilidadeComponent } from './sustentabilidade/sustentabilidade.c
 import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 import { CaixaPassagemComponent } from './produtos/caixa-passagem/caixa-passagem.component';
 import { ConexoesLisoComponent } from './produtos/conexoes-liso/conexoes-liso.component';
+import { ServicoComponent } from './servico/servico.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -30,7 +31,8 @@ const routes: Routes = [
   { path: "sustentabilidade", component: SustentabilidadeComponent },
   { path: "trabalhe-conosco", component: TrabalheConoscoComponent },
   { path: "caixa-passagem", component: CaixaPassagemComponent },
-  { path: "conexoes-liso", component: ConexoesLisoComponent }
+  { path: "conexoes-liso", component: ConexoesLisoComponent },
+  { path: "servicos", component: ServicoComponent }
 ];
 
 
