@@ -15,8 +15,10 @@
     <h2>Valores e princípios</h2>
   </div>
   <div class="css-desc-valores text-center text-config">
-    <h3>Nossas atividades são orientadas através de princípios e valores humanos, éticos e sustentáveis que garantem a
-      confiabilidade de nossos clientes, colaboradores e fornecedores.</h3>
+    <h3>Nosso compromisso central reside na orientação de todas as nossas atividades por meio de princípios e valores
+      profundamente enraizados na humanidade, na ética e na sustentabilidade.</h3>
+    <h3>Esses pilares fundamentais não apenas norteiam nossas ações, mas também constituem a base que garante a
+      confiabilidade que nossos clientes, colaboradores e parceiros fornecedores depositam em nós.</h3>
   </div>
   <div class="css-sustentabilidade text-center">
     <h2>Sustentabilidade</h2>
@@ -30,13 +32,31 @@
     <img src="assets/images/institucional/sustainability.png" alt="Sustentabilidade">
     <div class="text-margin">A Tucano investe também em energia renovável e apoia a cultura e o esporte.</div>
   </div>
-  <div class="css-info text-center"><button type="button" routerLink="/sustentabilidade" routerLinkActive="active">SAIBA MAIS</button></div>
+  <!-- <div class="css-info text-center"><button type="button" routerLink="/sustentabilidade" routerLinkActive="active">SAIBA
+      MAIS</button></div> -->
+
+  <div class="gallery-container">
+    <div class="galery-title text-center">
+      <h2> Galeria </h2>
+      <p>Um pouco sobre nós!</p>
+    </div>
+    <div class="photo-gallery">
+      <div class="photo" *ngFor="let photo of photos">
+        <img src="{{ photo.imageUrl }}" alt="{{ photo.caption }}" (click)="navigateToDetails(photo)">
+        <div class="caption">{{ photo.caption }}</div>
+        <div class="info-box" *ngIf="photo.showInfo">
+          {{ photo.info }}
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="css-localizacao-title text-center">
     <h2> Localização </h2>
   </div>
 
   <div class="css-localizacao-imagem">
-    <img src="assets/images/institucional/thumb__500_500_0_0_auto.jpg" alt="Localização">
+    <img src="assets/images/institucional/thumb-loc.png" alt="Localização">
   </div>
 
   <div class="css-localizacao-desc">
@@ -46,4 +66,11 @@
       futuro melhor para todos.</p>
   </div>
   <!-- <img class="img-inst" src="assets/images/home.jpg" /> -->
+</div>
+
+<div class="galery-open" *ngIf="imgClick">
+  <img src="{{ imgUrl }}">
+  <button mat-mini-fab color="warn" (click)="imgClick = false">
+    <mat-icon>close</mat-icon>
+  </button>
 </div>

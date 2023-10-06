@@ -11,10 +11,11 @@ import * as emailjs from 'emailjs-com';
 export class ContatoComponent implements OnInit {
 
   comercial = [
-    { nome: 'AMANDA', numero: '64 99230-8541', email: 'vendas03@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=556492308541&text&type=phone_number&app_absent=0' },
+    { nome: 'AMANDA', numero: '64 99230-8541', email: 'amanda@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=556492308541&text&type=phone_number&app_absent=0' },
   ];
 
   vendedores = [
+    { nome: 'CARLA', numero: '64 99644-7131', email: 'vendas05@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564996447131&text&type=phone_number&app_absent=0' },
     { nome: 'LIDIANE', numero: '64 99244-2043', email: 'vendas01@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564992442043&text&type=phone_number&app_absent=0' },
     { nome: 'MARCOS AURÉLIO', numero: '64 99279-5551', email: 'marcos@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564992795551&text&type=phone_number&app_absent=0' },
     { nome: 'SABRINA', numero: '64 99603-3221', email: 'vendas04@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564996033221&text&type=phone_number&app_absent=0' },

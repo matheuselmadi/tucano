@@ -107,6 +107,7 @@ export class AcessoriosComponent implements OnInit {
       imageUrl: 'assets/images/acessorios/irritec.jpg'
     },
     {
+      id: 7,
       name: 'Solda Termofusão',
       description: 'A solda por termofusão consiste em aquecer as extremidades dos tubos com uma placa de aquecimento e aplicar uma pressão normalizada. As soldas são mais usadas em tubos com diâmetros maiores (63-315 mm).',
       imageUrl: 'assets/images/acessorios/temofusao.JPG'
@@ -142,6 +143,9 @@ export class AcessoriosComponent implements OnInit {
     }
     if (productId === 6) {
       this.router.navigate(['/conexoes-liso']); // Redirecionar para a página do produto com o ID correspondente
+    }
+    if (productId === 7) {
+      this.router.navigate(['/servicos']); // Redirecionar para a página do produto com o ID correspondente
     }
   }
 

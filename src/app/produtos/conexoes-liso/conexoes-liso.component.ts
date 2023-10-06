@@ -63,9 +63,9 @@ export class ConexoesLisoComponent {
       imageUrl: 'assets/images/acessorios/colar.jpg'
     },
     {
-      title: 'Solda Termofusão',
-      description: 'A solda por termofusão consiste em aquecer as extremidades dos tubos com uma placa de aquecimento e aplicar uma pressão normalizada. As soldas são mais usadas em tubos com diâmetros maiores (63-315 mm).',
-      imageUrl: 'assets/images/acessorios/temofusao.JPG'
+      title: 'Soldagem Conexão PEAD',
+      description: 'A soldagem de conexão de PEAD é executada por termofusão. É feita exclusivamente em casos de necessidades de curvas, colarinhos e flanges.',
+      imageUrl: 'assets/images/acessorios/conexoes-termofusao.jpeg'
     },
     // Adicione mais acessórios conforme necessário
   ];

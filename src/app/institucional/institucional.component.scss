@@ -7,10 +7,11 @@ body {
 	display: grid;
 	color: white;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: 70px 470px 50px 150px 50px 150px 50px 390px 281px;
+	grid-template-rows: 70px 470px 50px 150px 50px 150px 50px 500px 390px 281px;
 	grid-template-areas: "css-institucional css-institucional" "css-video css-video" "css-valores css-valores" "css-desc-valores css-desc-valores"
 		"css-sustentabilidade css-sustentabilidade" "css-desc1-sustentabilidade css-desc2-sustentabilidade"
 		"css-info css-info"
+		"gallery-container gallery-container"
 		"css-localizacao-title css-localizacao-title"
 		"css-localizacao-imagem css-localizacao-desc";
 }
@@ -28,7 +29,7 @@ body {
 }
 
 .css-valores {
-	margin-top: 180px;
+	margin-top: 160px;
 	color: black;
 	grid-area: css-valores;
 }
@@ -38,7 +39,7 @@ body {
 }
 
 .css-desc-valores {
-	margin-top: 180px;
+	margin-top: 160px;
 	color: black;
 	background-color: #DCDCDC;
 	border-radius: 8px;
@@ -52,7 +53,7 @@ body {
 }
 
 .css-sustentabilidade {
-	margin-top: 200px;
+	margin-top: 260px;
 	color: black;
 	grid-area: css-sustentabilidade;
 }
@@ -62,7 +63,7 @@ body {
 }
 
 .css-desc1-sustentabilidade {
-	margin-top: 200px;
+	margin-top: 260px;
 	width: 500px;
 	padding-left: 32%;
 	text-align: center;
@@ -79,7 +80,7 @@ body {
 }
 
 .css-desc2-sustentabilidade {
-	margin-top: 200px;
+	margin-top: 260px;
 	width: 500px;
 	text-align: center;
 	color: black;
@@ -95,7 +96,7 @@ body {
 }
 
 .css-info {
-	margin-top: 240px;
+	margin-top: 300px;
 	color: black;
 	grid-area: css-info;
 }
@@ -221,3 +222,121 @@ img {
 // 	width: 1904px;
 // 	border-radius: 0;
 // }
+
+.galery-open {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
+	z-index: 1000; /* Coloca o modal acima de outros elementos */
+}
+
+.galery-open img {
+	display: block;
+	top: 10%;
+	margin: 0 auto; /* Centraliza a imagem horizontalmente */
+	width: 1280px; /* Define a largura da imagem */
+	height: 720px; /* Define a altura da imagem */
+	position: relative; /* Permite o ajuste do z-index para a imagem */
+	z-index: 1001; /* Coloca a imagem acima do fundo escuro do modal */
+}
+
+.galery-open button {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	// font-size: 30px;
+	// color: #fff;
+	// cursor: pointer;
+	// z-index: 1002; /* Coloca o botão de fechar acima da imagem */
+}
+
+.gallery-container {
+    margin-top: 300px; /* Espaço acima da div */
+	grid-area: gallery-container;
+	text-align: center;
+}
+
+.photo-gallery {
+    // margin-bottom: 30px; /* Espaço abaixo da div */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralize as fotos horizontalmente */
+    align-items: center; /* Centralize as fotos verticalmente */
+    gap: 10px;
+  }
+
+  .galery-title {
+	color: black;
+  }
+
+  .galery-title h2 {
+	font-size: 24px;
+  }
+
+  .galery-title p {
+	font-size: 22px;
+	padding-bottom: 15px;
+  }
+  
+  .photo {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 350px; /* Defina a largura desejada para todas as fotos */
+    height: 250px; /* Defina a altura desejada para todas as fotos */
+    margin: 10px; /* Espaçamento entre as fotos */
+    
+  }
+  
+  .photo img {
+	margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%; /* Garante que a imagem preencha o contêiner */
+    height: 100%; /* Garante que a imagem preencha o contêiner */
+    object-fit: cover; /* Mantém a proporção e corta as imagens para caber no contêiner */
+  }
+  
+  .caption {
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+	color: black;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+    height: 30px;
+    display: flex; /* Transformamos o elemento em um flex container */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  }  
+  
+  .info-box {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.3s;
+    opacity: 0; /* Inicialmente, as informações são invisíveis */
+  }
+  
+  .photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .photo:hover .info-box {
+    bottom: 0;
+    opacity: 1; /* Torna as informações visíveis quando o mouse está sobre a foto */
+  }
+  
+  .photo:active {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  

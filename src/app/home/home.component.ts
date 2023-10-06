@@ -10,12 +10,12 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   currentImageIndex: number = 0;
   private slideInterval: any;
-  private readonly intervalTime = 10000; // Defina o tempo em milissegundos (5 segundos, por exemplo)
+  private readonly intervalTime = 15000; // Defina o tempo em milissegundos (5 segundos, por exemplo)
   currentIndex = 0;
 
   images = [
     {
-      src: 'assets/images/slide1.JPG',
+      src: 'assets/images/home/slide1.png',
       alt: 'TUCANOLISO',
       title: 'TUCANOLISO®',
       description: 'Linha de tubos lisos da Tucano.',
@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       }
     },
     {
-      src: 'assets/images/slide2.jpg',
+      src: 'assets/images/home/slide2.png',
       alt: 'TUCANODRENO',
       title: 'TUCANODRENO®',
       description: 'Linha de drenagem da Tucano.',
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       }
     },
     {
-      src: 'assets/images/slide3.jpg',
+      src: 'assets/images/home/slide3.png',
       alt: 'TUCANODUTO',
       title: 'TUCANODUTO®',
       description: 'Linha de Eletrodutos Flexíveis e Corrugados da Tucano.',
@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       }
     },
     {
-      src: 'assets/images/slide4.JPG',
+      src: 'assets/images/home/slide4.png',
       alt: 'MANILHA PEAD',
       title: 'MANILHA PEAD',
       description: 'Linha de manilhas da Tucano.',
@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       }
     },
     {
-      src: 'assets/images/slide5.png',
+      src: 'assets/images/home/slide5.png',
       alt: 'SERVIÇOS',
       title: 'SERVIÇOS',
       description: 'Nossa empresa se destaca pela excelência na prestação de serviços.',
@@ -69,7 +69,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ];
 
   vendedores = [
-    { nome: 'AMANDA', numero: '64 99230-8541', email: 'vendas03@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=556492308541&text&type=phone_number&app_absent=0' },
+    { nome: 'CARLA', numero: '64 99644-7131', email: 'vendas05@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564996447131&text&type=phone_number&app_absent=0' },
     { nome: 'LIDIANE', numero: '64 99244-2043', email: 'vendas01@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564992442043&text&type=phone_number&app_absent=0' },
     { nome: 'MARCOS AURÉLIO', numero: '64 99279-5551', email: 'marcos@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564992795551&text&type=phone_number&app_absent=0' },
     { nome: 'SABRINA', numero: '64 99603-3221', email: 'vendas04@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564996033221&text&type=phone_number&app_absent=0' },
