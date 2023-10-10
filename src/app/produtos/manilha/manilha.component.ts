@@ -61,7 +61,7 @@ export class ManilhaComponent implements OnInit {
 
   photos = [
     {
-      imageUrl: 'assets/images/drenagem-pluvial.jpg',
+      imageUrl: 'assets/images/contencao.jpeg',
       caption: 'Drenagem Pluvial',
       info: 'Informações sobre a Foto 1',
       showInfo: false
@@ -73,7 +73,7 @@ export class ManilhaComponent implements OnInit {
       showInfo: false
     },
     {
-      imageUrl: 'assets/images/contencao.jpeg',
+      imageUrl: 'assets/images/drenagem-pluvial.jpg',
       caption: 'Obras de Contenção',
       info: 'Informações sobre a Foto 2',
       showInfo: false

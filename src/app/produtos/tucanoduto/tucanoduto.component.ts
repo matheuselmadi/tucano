@@ -40,7 +40,7 @@ export class TucanodutoComponent implements OnInit {
     {
       title: 'Fita de segurança',
       description: 'É utilizada dentro das valas a cerca de 60 cm acima do eletroduto e serve para demarcar o trajeto onde foram instalados e alertar aos riscos de alta, média e baixa tensão em caso de escavação.',
-      imageUrl: 'assets/images/acessorios/fita.jpg'
+      imageUrl: 'assets/images/acessorios/fita.png'
     },
     {
       title: 'Tampão',

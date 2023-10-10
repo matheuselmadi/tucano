@@ -13,25 +13,25 @@ export class AcessoriosComponent implements OnInit {
       id: 1,
       name: 'Tucano Dreno®',
       description: 'Tubos para Drenagem de Solo produzidos em Polietileno de Alta Densidade (PEAD).',
-      imageUrl: 'assets/images/thumb-prod2.jpg'
+      imageUrl: 'assets/images/thumb-dreno.png'
     },
     {
       id: 2,
       name: 'Tucano Duto®',
       description: 'Eletrodutos Flexíveis e Corrugados produzidos em Polietileno de Alta Densidade (PEAD).',
-      imageUrl: 'assets/images/thumb-prod1.jpg'
+      imageUrl: 'assets/images/thumb-duto.png'
     },
     {
       id: 3,
       name: 'Tucano Liso®',
       description: 'Tubo Liso Flexível produzido em Polietileno de Alta Densidade PE 100.',
-      imageUrl: 'assets/images/thumb-liso.JPG'
+      imageUrl: 'assets/images/thumb-liso.png'
     },
     {
       id: 4,
       name: 'Manilha®',
       description: 'O tubo de infraestrutura dupla parede da Tucano é fabricado em PEAD, sua finalidade é a drenagem de água pluvial.',
-      imageUrl: 'assets/images/thumb-manilha.JPG'
+      imageUrl: 'assets/images/thumb-manilha.png'
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ export class AcessoriosComponent implements OnInit {
     {
       name: 'Fita de segurança',
       description: 'É utilizada dentro das valas a cerca de 60 cm acima do eletroduto e serve para demarcar o trajeto onde foram instalados e alertar aos riscos de alta, média e baixa tensão em caso de escavação.',
-      imageUrl: 'assets/images/acessorios/fita.jpg'
+      imageUrl: 'assets/images/acessorios/fita.png'
     },
     {
       name: 'Manta Geotêxtil',
@@ -110,7 +110,7 @@ export class AcessoriosComponent implements OnInit {
       id: 7,
       name: 'Solda Termofusão',
       description: 'A solda por termofusão consiste em aquecer as extremidades dos tubos com uma placa de aquecimento e aplicar uma pressão normalizada. As soldas são mais usadas em tubos com diâmetros maiores (63-315 mm).',
-      imageUrl: 'assets/images/acessorios/temofusao.JPG'
+      imageUrl: 'assets/images/acessorios/termofusao.png'
     },
     // Adicione mais produtos aqui
   ];
@@ -150,10 +150,10 @@ export class AcessoriosComponent implements OnInit {
   }
 
   downloadPDF() {
-    const pdfUrl = 'assets/files/catalogo.pdf'; // Substitua pelo caminho real do seu arquivo PDF
+    const pdfUrl = 'assets/files/Catálogo-Tucano.pdf'; // Substitua pelo caminho real do seu arquivo PDF
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'Catalogo-Tucano.pdf'; // O nome que o arquivo terá ao ser baixado
+    link.download = 'Catálogo-Tucano.pdf'; // O nome que o arquivo terá ao ser baixado
     link.click();
   }
 

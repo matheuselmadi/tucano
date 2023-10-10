@@ -38,7 +38,7 @@
     <div class="opcoes-card" *ngFor="let opcao of opcoes">
         <mat-card>
             <!-- <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}"> -->
-            <mat-card-content>
+            <mat-card-content class="opcoes-content">
                 <h4><strong>{{ opcao.title }}</strong></h4>
                 <p>{{ opcao.description }}</p>
             </mat-card-content>
@@ -54,7 +54,7 @@
     <div class="accessory-card" *ngFor="let accessory of accessories">
         <mat-card>
             <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}">
-            <mat-card-content>
+            <mat-card-content class="accessory-content">
                 <h4><strong>{{ accessory.title }}</strong></h4>
                 <p>{{ accessory.description }}</p>
             </mat-card-content>

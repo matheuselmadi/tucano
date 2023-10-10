@@ -105,11 +105,16 @@
   
   .opcoes-card {
     display: inline-block;
-    margin-right: 20px;
+    // margin-right: 20px;
+    margin: 15px;
     vertical-align: top;
     width: 400px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); /* Adicione a sombra ao bloco */
     margin-bottom: 20px;
+  }
+
+  .opcoes-content {
+    min-height: 120px;
   }
 
   .full-width-container {

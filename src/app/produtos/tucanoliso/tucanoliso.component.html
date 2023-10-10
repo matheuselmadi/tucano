@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="product-image">
-        <img src="assets/images/slide1.JPG" alt="Imagem do Produto">
+        <img src="assets/images/liso-produto.png" alt="Imagem do Produto">
     </div>
 </div>
 
@@ -38,7 +38,7 @@
         <div class="opcoes-card" *ngFor="let opcao of opcoes">
             <mat-card>
                 <!-- <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}"> -->
-                <mat-card-content>
+                <mat-card-content class="opcoes-content">
                     <h4><strong>{{ opcao.title }}</strong></h4>
                     <p>{{ opcao.description }}</p>
                 </mat-card-content>
@@ -65,7 +65,7 @@
     <div class="accessory-card" *ngFor="let accessory of accessories" (click)="redirectToProduct(accessory.id)">
         <mat-card>
             <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}">
-            <mat-card-content>
+            <mat-card-content class="accessory-content">
                 <h4><strong>{{ accessory.title }}</strong></h4>
                 <p>{{ accessory.description }}</p>
             </mat-card-content>

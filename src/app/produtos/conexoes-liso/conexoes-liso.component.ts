@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-conexoes-liso',
@@ -63,12 +64,15 @@ export class ConexoesLisoComponent {
       imageUrl: 'assets/images/acessorios/colar.jpg'
     },
     {
+      id: 1,
       title: 'Soldagem Conexão PEAD',
       description: 'A soldagem de conexão de PEAD é executada por termofusão. É feita exclusivamente em casos de necessidades de curvas, colarinhos e flanges.',
       imageUrl: 'assets/images/acessorios/conexoes-termofusao.jpeg'
     },
     // Adicione mais acessórios conforme necessário
   ];
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.scrollToTop();
@@ -84,6 +88,13 @@ export class ConexoesLisoComponent {
     link.href = pdfUrl;
     link.download = 'Informações-Técnicas-Tucano-Duto.pdf'; // O nome que o arquivo terá ao ser baixado
     link.click();
+  }
+
+  redirectToProduct(acessory: number) {
+    if (acessory === 1) {
+      this.router.navigate(['/servicos']);
+    }
+
   }
 
 }

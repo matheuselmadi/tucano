@@ -38,7 +38,7 @@ export class TucanolisoComponent implements OnInit {
       id: 2,
       title: 'Solda Termofusão',
       description: 'A solda por termofusão consiste em aquecer as extremidades dos tubos com uma placa de aquecimento e aplicar uma pressão normalizada. As soldas são mais usadas em tubos com diâmetros maiores (63-315 mm).',
-      imageUrl: 'assets/images/acessorios/temofusao.JPG'
+      imageUrl: 'assets/images/acessorios/termofusao.png'
     },
   ];
 
