@@ -10,10 +10,21 @@
                     respeito às dimensões dos tubos a serem soldados. Somente tubos da mesma espessura podem ser
                     soldados. As soldas são mais usadas em tubos com diâmetros maiores (63-315 mm).
                 </p>
-                <a target="_blank"
-                    href="https://api.whatsapp.com/send/?phone=5564992308541&text&type=phone_number&app_absent=0">
-                    <button class="botao-contrate" type="button">CONTRATE</button>
-                </a>
+                <div class="solda-but-container">
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send/?phone=5564992308541&text&type=phone_number&app_absent=0">
+                        <button class="botao-contrate" type="button">CONTRATE</button>
+                    </a>
+                    <div class="photo-gallery">
+                        <div class="photo" *ngFor="let photo of photos" (click)="navigateToDetails(photo)">
+                            <img src="{{ photo.imageUrl }}" alt="{{ photo.caption }}">
+                            <!-- <div class="caption">{{ photo.caption }}</div> -->
+                            <div class="info-box" *ngIf="photo.showInfo">
+                                {{ photo.info }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="image-container">
                 <img src="assets/images/solda.jpeg" alt="Serviços de Soldas em Tubos e Conexões PEAD" class="image">
@@ -90,4 +101,11 @@
             </div>
         </div>
     </mat-card>
+</div>
+
+<div class="galery-open" *ngIf="imgClick">
+    <img src="{{ imgUrl }}">
+    <button mat-mini-fab color="warn" (click)="imgClick = false">
+        <mat-icon>close</mat-icon>
+    </button>
 </div>
