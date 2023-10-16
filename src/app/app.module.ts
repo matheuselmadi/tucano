@@ -39,6 +39,7 @@ import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.co
 import { CaixaPassagemComponent } from './produtos/caixa-passagem/caixa-passagem.component';
 import { ConexoesLisoComponent } from './produtos/conexoes-liso/conexoes-liso.component';
 import { ServicoComponent } from './servico/servico.component';
+import { GeotextilComponent } from './produtos/geotextil/geotextil.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { ServicoComponent } from './servico/servico.component';
     TrabalheConoscoComponent,
     CaixaPassagemComponent,
     ConexoesLisoComponent,
-    ServicoComponent
+    ServicoComponent,
+    GeotextilComponent
   ],
   imports: [
     BrowserAnimationsModule,

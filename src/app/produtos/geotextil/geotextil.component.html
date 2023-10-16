@@ -1,0 +1,86 @@
+<div class="product-container">
+    <div class="product-info">
+        <div class="info-content">
+            <h2>MANTA/CAMISA <strong>GEOTÊXTIL</strong></h2>
+            <p>Geotêxtil Não-Tecido em Poliéster, é um geotêxtil agulhado produzido com fios de poliéster.</p>
+            <p><strong>Material permeável que possui a capacidade de drenar, filtrar e separar resíduos.</strong></p>
+        </div>
+    </div>
+    <div class="product-image">
+        <img src="assets/images/manta-produto.png" alt="Imagem do Produto">
+    </div>
+</div>
+
+<div class="product-details">
+    <h3>GEOTÊXTIL</h3>
+    <div class="detail">
+        <h4>Como e onde são utilizados?</h4>
+        <p>Material permeável que possui a capacidade de drenar, filtrar e separar resíduos, é utilizada principalmente
+            para evitar danos ao solo e na proteção e reforço de tubos e outros materiais.</p>
+        <p>A camisa é uma espécie de tecido que tem como finalidade proteger os tubos de drenagem das partículas do solo que possam
+            obstruir (entupir, tampar) suas aberturas bloqueando a captação e a vazão de água.</p>
+    </div>
+    <!-- <div class="detail">
+      <h4>Detalhe 2</h4>
+      <p>Descrição do Detalhe 2</p>
+    </div> -->
+</div>
+
+<div class="opcoes">
+    <h3>Opções Geotêxtil</h3>
+    <div class="opcoes-card" *ngFor="let opcao of opcoes">
+        <mat-card>
+            <!-- <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}"> -->
+            <mat-card-content class="opcoes-content">
+                <h4><strong>{{ opcao.title }}</strong></h4>
+                <p>{{ opcao.description }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<!-- <div class="photo-gallery">
+    <div class="photo" *ngFor="let photo of photos">
+        <img src="{{ photo.imageUrl }}" alt="{{ photo.caption }}" (click)="navigateToDetails(photo)">
+        <div class="caption">{{ photo.caption }}</div>
+        <div class="info-box" *ngIf="photo.showInfo">
+            {{ photo.info }}
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="accessories">
+    <h3>Acessórios para o Tubo</h3>
+    <h5>Além da linha TUCANODRENO® a Tucano disponibiliza em sua linha de drenagem, acessórios que complementam seus
+        produtos e tornam sua obra
+        mais segura e perfeita.</h5>
+    <div class="accessory-card" *ngFor="let accessory of accessories">
+        <mat-card>
+            <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}">
+            <mat-card-content>
+                <h4><strong>{{ accessory.title }}</strong></h4>
+                <p>{{ accessory.description }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div> -->
+
+<!-- <div class="full-width-container">
+    <div class="content-container">
+        <div class="left-content">
+            <img src="assets/images/cat.png" alt="Imagem do Produto">
+        </div>
+        <div class="right-content">
+            <h2>INFORMAÇÕES TÉCNICAS</h2>
+            <p>Você pode baixar as informações técnicas da <STRONG>linha MANILHA®</STRONG>, e
+                tambem
+                solicitar a ficha
+                técnica de todos os nossos produtos com um de nossos vendedores!</p>
+            <div class="button-container">
+                <button class="download-button-info" (click)="downloadPDF()">BAIXAR INFORMAÇÕES TÉCNICAS</button>
+                <button class="download-button-ficha" routerLink="/contato" routerLinkActive="active">SOLICITAR FICHA
+                    TÉCNICA</button>
+            </div>
+        </div>
+    </div>
+</div> -->

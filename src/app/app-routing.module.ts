@@ -16,6 +16,7 @@ import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.co
 import { CaixaPassagemComponent } from './produtos/caixa-passagem/caixa-passagem.component';
 import { ConexoesLisoComponent } from './produtos/conexoes-liso/conexoes-liso.component';
 import { ServicoComponent } from './servico/servico.component';
+import { GeotextilComponent } from './produtos/geotextil/geotextil.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -32,7 +33,8 @@ const routes: Routes = [
   { path: "trabalhe-conosco", component: TrabalheConoscoComponent },
   { path: "caixa-passagem", component: CaixaPassagemComponent },
   { path: "conexoes-liso", component: ConexoesLisoComponent },
-  { path: "servicos", component: ServicoComponent }
+  { path: "servicos", component: ServicoComponent },
+  { path: "geotextil", component: GeotextilComponent }
 ];
 
 

@@ -50,11 +50,13 @@ export class AcessoriosComponent implements OnInit {
       imageUrl: 'assets/images/acessorios/fita.png'
     },
     {
+      id: 8,
       name: 'Manta Geotêxtil',
       description: 'Material permeável que possui a capacidade de drenar, filtrar e separar resíduos, e utilizada principalmente para evitar danos ao solo e na proteção e reforço de tubos e outros materiais.',
       imageUrl: 'assets/images/acessorios/manta.jpg'
     },
     {
+      id: 8,
       name: 'Camisa Geotêxtil',
       description: 'Espécie de tecido que tem como finalidade proteger os tubos de drenagem das partículas do solo que possam obstruir (entupir, tampar) suas aberturas bloqueando a captação e a vazão de água.',
       imageUrl: 'assets/images/acessorios/camisa.jpg'
@@ -146,6 +148,9 @@ export class AcessoriosComponent implements OnInit {
     }
     if (productId === 7) {
       this.router.navigate(['/servicos']); // Redirecionar para a página do produto com o ID correspondente
+    }
+    if (productId === 8) {
+      this.router.navigate(['/geotextil']); // Redirecionar para a página do produto com o ID correspondente
     }
   }
 
