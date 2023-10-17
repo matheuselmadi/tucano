@@ -98,10 +98,10 @@ export class ManilhaComponent implements OnInit {
   }
 
   downloadPDF() {
-    const pdfUrl = 'caminho-para-o-seu-arquivo.pdf'; // Substitua pelo caminho real do seu arquivo PDF
+    const pdfUrl = 'assets/files/Informações-Técnicas-Manilha.pdf'; // Substitua pelo caminho real do seu arquivo PDF
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'Informações-Técnicas-Tucano-Duto.pdf'; // O nome que o arquivo terá ao ser baixado
+    link.download = 'Informações-Técnicas-Manilha.pdf'; // O nome que o arquivo terá ao ser baixado
     link.click();
   }
 
