@@ -31,8 +31,31 @@ export class ServicoComponent {
       caption: 'Quadra de Areia',
       info: 'Soldagem concluída.',
       showInfo: true
-    },
+    }
+  ];
 
+  photosAcompanhamento = [
+    {
+      id: 1,
+      imageUrl: 'assets/images/servicos/IMG_4.jpg',
+      caption: 'Entregas',
+      info: 'Informações sobre a Foto 1',
+      showInfo: false
+    },
+    {
+      id: 2,
+      imageUrl: 'assets/images/institucional/galeria/foto5.jpeg',
+      caption: 'Drenagem',
+      info: 'Informações sobre a Foto 2',
+      showInfo: false
+    },
+    {
+      id: 3,
+      imageUrl: 'assets/images/institucional/galeria/foto6.jpeg',
+      caption: 'Quadra de Areia',
+      info: 'Soldagem concluída.',
+      showInfo: false
+    }
   ];
 
   ngOnInit(): void {

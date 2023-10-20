@@ -32,6 +32,11 @@ export class TucanodrenoComponent implements OnInit {
       imageUrl: 'assets/images/acessorios/cruzeta.jpg'
     },
     {
+      title: 'Junção de Emenda em Y Duplo',
+      description: 'Conexão utilizada para dividir as ramificações dos tubos de drenagem em formato de Y duplo.',
+      imageUrl: 'assets/images/thumb-yuplo.png'
+    },
+    {
       title: 'Junção de Emenda em Y',
       description: 'Conexão utilizada para dividir as ramificações dos tubos de drenagem em formato de Y.',
       imageUrl: 'assets/images/acessorios/juncao.jpg'

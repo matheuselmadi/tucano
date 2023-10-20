@@ -63,7 +63,7 @@ export class TucanolisoComponent implements OnInit {
     },
     {
       imageUrl: 'assets/images/chorume.jpeg',
-      caption: 'Gerenciamento de Chorume 75mm - 315mm',
+      caption: 'Aterro Sanitário 75mm - 315mm',
       info: 'Informações sobre a Foto 2',
       showInfo: false
     },

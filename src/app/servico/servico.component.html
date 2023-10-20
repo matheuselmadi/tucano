@@ -52,15 +52,26 @@
                 <p class="description2">
                     Acompanhamento na Obra.
                 </p>
-                <a target="_blank"
-                    href="https://api.whatsapp.com/send/?phone=5564992308541&text&type=phone_number&app_absent=0">
-                    <button class="botao-contrate2" type="button">CONTRATE</button>
-                </a>
+                <div class="solda-but-container">
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send/?phone=5564992308541&text&type=phone_number&app_absent=0">
+                        <button class="botao-contrate2" type="button">CONTRATE</button>
+                    </a>
+                    <div class="photo-gallery">
+                        <div class="photo" *ngFor="let photo of photosAcompanhamento" (click)="navigateToDetails(photo)">
+                            <img src="{{ photo.imageUrl }}" alt="{{ photo.caption }}">
+                            <!-- <div class="caption">{{ photo.caption }}</div> -->
+                            <div class="info-box" *ngIf="photo.showInfo">
+                                {{ photo.info }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </mat-card>
 
-    <mat-card class="card-container">
+    <!-- <mat-card class="card-container">
         <div class="content-container">
             <div class="text-container">
                 <h2 class="title">Serviço de Limpa Fossa</h2>
@@ -101,11 +112,11 @@
             </div>
         </div>
     </mat-card>
-</div>
+</div> -->
 
-<div class="galery-open" *ngIf="imgClick">
-    <img src="{{ imgUrl }}">
-    <button mat-mini-fab color="warn" (click)="imgClick = false">
-        <mat-icon>close</mat-icon>
-    </button>
-</div>
+    <div class="galery-open" *ngIf="imgClick">
+        <img src="{{ imgUrl }}">
+        <button mat-mini-fab color="warn" (click)="imgClick = false">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>

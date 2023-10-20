@@ -207,6 +207,7 @@
 	height: 720px; /* Define a altura da imagem */
 	position: relative; /* Permite o ajuste do z-index para a imagem */
 	z-index: 1001; /* Coloca a imagem acima do fundo escuro do modal */
+  border-radius: 8px;
 }
 
 .galery-open button {

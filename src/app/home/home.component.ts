@@ -86,8 +86,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     },
     {
       id: 1,
-      imageUrl: 'assets/images/fossa.jpeg',
-      caption: 'Limpa fossa',
+      imageUrl: 'assets/images/home/thumb-acompanhamento.JPG',
+      caption: 'Acompanhamento Técnico',
       info: 'Informações sobre a Foto 2',
       showInfo: false
     },

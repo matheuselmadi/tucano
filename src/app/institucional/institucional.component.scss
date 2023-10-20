@@ -7,7 +7,7 @@ body {
 	display: grid;
 	color: white;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: 70px 470px 50px 150px 50px 150px 50px 500px 390px 281px;
+	grid-template-rows: 70px 470px 50px 150px 50px 150px 50px 700px 390px 281px;
 	grid-template-areas: "css-institucional css-institucional" "css-video css-video" "css-valores css-valores" "css-desc-valores css-desc-valores"
 		"css-sustentabilidade css-sustentabilidade" "css-desc1-sustentabilidade css-desc2-sustentabilidade"
 		"css-info css-info"
@@ -254,7 +254,8 @@ img {
 }
 
 .gallery-container {
-    margin-top: 300px; /* Espaço acima da div */
+    margin-top: 280px; /* Espaço acima da div */
+	padding: 10px;
 	grid-area: gallery-container;
 	text-align: center;
 }
