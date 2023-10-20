@@ -74,7 +74,7 @@ import { GeotextilComponent } from './produtos/geotextil/geotextil.component';
     MatExpansionModule,
     MatFormFieldModule,
     MatInputModule,
-    MatDatepickerModule,
+    // MatDatepickerModule,
     MatNativeDateModule,
     SlickCarouselModule,
     MatCardModule,
