@@ -1,10 +1,12 @@
 <mat-toolbar class="toolbar">
   <div class="container">
-    <div class="logo"><img src="assets/images/logo.png" style="height: 60px; margin: 10px;" /></div>
+    <div class="logo" routerLink="/home">
+      <img src="assets/images/logo.png" class="desktop-logo" />
+      <img src="assets/images/logo-mobile.png" class="mobile-logo" />
+    </div>
     <a class="hiddenDiv" routerLink="/home" routerLinkActive="active">INÍCIO</a>
     <a class="hiddenDiv" routerLink="/institucional" routerLinkActive="active">INSTITUCIONAL</a>
-    <button class="button-text hiddenDiv" mat-button
-      [matMenuTriggerFor]="menu">PRODUTOS<mat-icon>expand_more</mat-icon></button>
+    <a class="hiddenDiv button-drop" [matMenuTriggerFor]="menu">PRODUTOS<mat-icon>expand_more</mat-icon></a>
     <mat-menu #menu="matMenu">
       <button class="menu-item" mat-menu-item routerLink="/tucanodreno" routerLinkActive="active">TUCANO DRENO</button>
       <button class="menu-item" mat-menu-item routerLink="/tucanoduto" routerLinkActive="active">TUCANO DUTO</button>
@@ -16,7 +18,6 @@
     <a class="hiddenDiv" routerLink="/vendas" routerLinkActive="active">VENDAS</a>
     <a class="hiddenDiv" target="_blank" href="https://tubostucano.blogspot.com/">BLOG</a>
     <a class="hiddenDiv" routerLink="/contato" routerLinkActive="active">CONTATO</a>
-    <a class="space"></a>
     <div class="social-media">
       <a target="_blank" href="https://www.facebook.com/tubostucano/">
         <button mat-icon-button matTooltip="Nosso Facebook">

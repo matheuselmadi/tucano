@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 300px; /* Adicione o padding para espaço nas laterais */
+    padding: 0 16.5%; /* Adicione o padding para espaço nas laterais */
   }
   
   .logo {
@@ -49,4 +49,15 @@
 
   .number:hover {
     color: #ffab0f;
+  }
+
+  @media screen and (max-width: 1020px) {
+    .footer-content {
+      flex-direction: column; 
+      text-align: center;
+    }
+
+    .social-buttons {
+      padding-bottom: 20px;
+    }
   }
