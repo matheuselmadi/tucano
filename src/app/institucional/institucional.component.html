@@ -4,39 +4,37 @@
       <h1>INSTITUCIONAL</h1>
     </div>
   </div>
-  <div class="css-video text-center">
-    <div class="margin-video">
-      <iframe width="800" height="450" src="https://www.youtube.com/embed/nCyDFfQNlcM?autoplay=1" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0"
-        allowfullscreen uk-responsive uk-video="automute: true"></iframe>
-    </div>
+  <div class="css-video">
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/nCyDFfQNlcM?autoplay=1" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0"
+      allowfullscreen uk-responsive uk-video="automute: true"></iframe>
   </div>
-  <div class="css-valores text-center">
+  <div class="css-valores">
     <h2>Valores e princípios</h2>
-  </div>
-  <div class="css-desc-valores text-center text-config">
     <h3>Nosso compromisso central reside na orientação de todas as nossas atividades por meio de princípios e valores
       profundamente enraizados na humanidade, na ética e na sustentabilidade.</h3>
     <h3>Esses pilares fundamentais não apenas norteiam nossas ações, mas também constituem a base que garante a
       confiabilidade que nossos clientes, colaboradores e parceiros fornecedores depositam em nós.</h3>
   </div>
-  <div class="css-sustentabilidade text-center">
+  <div class="css-sustentabilidade">
     <h2>Sustentabilidade</h2>
   </div>
-  <div class="css-desc1-sustentabilidade text-config2">
-    <img src="assets/images/institucional/leaf.png" alt="Sustentabilidade">
-    <div class="text-margin">A Tucano possui um forte compromisso com ações que visam conter a exploração dos recursos
-      naturais e a preservação do Meio Ambiente.</div>
-  </div>
-  <div class="css-desc2-sustentabilidade text-config2">
-    <img src="assets/images/institucional/sustainability.png" alt="Sustentabilidade">
-    <div class="text-margin">A Tucano investe também em energia renovável e apoia a cultura e o esporte.</div>
+  <div class="sustentabilidade-container">
+    <div class="css-desc1-sustentabilidade">
+      <img src="assets/images/institucional/leaf.png" alt="Sustentabilidade">
+      <div>A Tucano possui um forte compromisso com ações que visam conter a exploração dos recursos
+        naturais e a preservação do Meio Ambiente.</div>
+    </div>
+    <div class="css-desc2-sustentabilidade">
+      <img src="assets/images/institucional/sustainability.png" alt="Sustentabilidade">
+      <div>A Tucano investe também em energia renovável e apoia a cultura e o esporte.</div>
+    </div>
   </div>
   <!-- <div class="css-info text-center"><button type="button" routerLink="/sustentabilidade" routerLinkActive="active">SAIBA
       MAIS</button></div> -->
 
   <div class="gallery-container">
-    <div class="galery-title text-center">
+    <div class="galery-title">
       <h2> Galeria </h2>
       <p>Um pouco sobre nós!</p>
     </div>
@@ -51,26 +49,28 @@
     </div>
   </div>
 
-  <div class="css-localizacao-title text-center">
-    <h2> Localização </h2>
+  <div class="css-localizacao-container">
+    <div class="css-localizacao-title">
+      <h2> Localização </h2>
+    </div>
+    <div class="css-localizacao-content">
+      <div class="css-localizacao-imagem">
+        <img src="assets/images/institucional/thumb-loc.png" alt="Localização">
+      </div>
+      <div class="css-localizacao-desc">
+        <h2>Em atividade desde 2002, a Tucano, está localizada no centro-oeste brasileiro, na região sudeste do Estado
+          de
+          Goiás, no município de Ipameri.</h2>
+        <p>Estamos no coração do Brasil e compartilhamos com todo o mundo nossos produtos e nossas ações em prol de um
+          futuro melhor para todos.</p>
+      </div>
+      <!-- <img class="img-inst" src="assets/images/home.jpg" /> -->
+    </div>
   </div>
 
-  <div class="css-localizacao-imagem">
-    <img src="assets/images/institucional/thumb-loc.png" alt="Localização">
+  <div class="galery-open" *ngIf="imgClick">
+    <img src="{{ imgUrl }}">
+    <button mat-mini-fab color="warn" (click)="imgClick = false">
+      <mat-icon>close</mat-icon>
+    </button>
   </div>
-
-  <div class="css-localizacao-desc">
-    <h2>Em atividade desde 2002, a Tucano, está localizada no centro-oeste brasileiro, na região sudeste do Estado de
-      Goiás, no município de Ipameri.</h2>
-    <p>Estamos no coração do Brasil e compartilhamos com todo o mundo nossos produtos e nossas ações em prol de um
-      futuro melhor para todos.</p>
-  </div>
-  <!-- <img class="img-inst" src="assets/images/home.jpg" /> -->
-</div>
-
-<div class="galery-open" *ngIf="imgClick">
-  <img src="{{ imgUrl }}">
-  <button mat-mini-fab color="warn" (click)="imgClick = false">
-    <mat-icon>close</mat-icon>
-  </button>
-</div>

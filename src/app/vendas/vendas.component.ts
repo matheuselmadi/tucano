@@ -30,7 +30,7 @@ export class VendasComponent implements OnInit {
       numeroTelefone: '(64) 3491-5388',
       vendedores: [
         { nome: 'CARLA', empresa: 'TUCANO', numero: '64 99644-7131', email: 'vendas05@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564996447131&text&type=phone_number&app_absent=0', cidade: 'Ipameri-GO' },
-        { nome: 'LIDIANE', empresa: 'TUCANO', numero: '64 99244-2043', email: 'vendas01@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564992442043&text&type=phone_number&app_absent=0', cidade: 'Ipameri-GO' },
+        { nome: 'LIDIANE', empresa: 'TUCANO', numero: '64 99244-2043', email: 'vendas02@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564992442043&text&type=phone_number&app_absent=0', cidade: 'Ipameri-GO' },
         { nome: 'MARCOS AURÉLIO', empresa: 'TUCANO', numero: '64 99279-5551', email: 'marcos@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564992795551&text&type=phone_number&app_absent=0', cidade: 'Ipameri-GO' },
         { nome: 'SABRINA', empresa: 'TUCANO', numero: '64 99603-3221', email: 'vendas04@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564996033221&text&type=phone_number&app_absent=0', cidade: 'Ipameri-GO' },
         // { nome: 'PAULO / GEAN', empresa: 'GAB-DRENO', numero: '62 8114-9952 / 62 9154-5225', email: 'gabdreno@gmail.com', url: 'https://api.whatsapp.com/send/?phone=556281149952&text&type=phone_number&app_absent=0', cidade: 'Goiania-GO' },

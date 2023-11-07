@@ -30,7 +30,7 @@ export class TucanolisoComponent implements OnInit {
     },
     {
       id: 1,
-      title: 'Conexão de Compreção',
+      title: 'Conexão de Compressão',
       description: 'As conexões de compressão vêm em diferentes formas, o que facilita sua versatilidade na conexão de tubulações. São fabricadas no material PP nos diâmetros DE 20 a 110 mm.',
       imageUrl: 'assets/images/acessorios/irritec.jpg'
     },
