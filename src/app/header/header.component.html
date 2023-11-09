@@ -53,9 +53,10 @@
 <mat-drawer #drawer class="sidenav" mode="side">
   <div class="container-nav">
     <mat-accordion multi>
-      <button class="botoes-container-nav" mat-menu-item routerLink="/home" routerLinkActive="active">INÍCIO</button>
-      <button class="botoes-container-nav" mat-menu-item routerLink="/institucional"
-        routerLinkActive="active">INSTITUCIONAL</button>
+      <button class="botoes-container-nav" mat-menu-item routerLink="/home" routerLinkActive="active"
+        (click)="drawer.toggle(); accordion.closeAll(); clicked()">INÍCIO</button>
+      <button class="botoes-container-nav" mat-menu-item routerLink="/institucional" routerLinkActive="active"
+        (click)="drawer.toggle(); accordion.closeAll(); clicked()">INSTITUCIONAL</button>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title class="botoes-container-nav-exp">
@@ -63,24 +64,31 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div class="button-nav">
-          <button class="menu-item" mat-menu-item routerLink="/tucanodreno" routerLinkActive="active">TUCANO
+          <button class="menu-item" mat-menu-item routerLink="/tucanodreno" routerLinkActive="active"
+            (click)="drawer.toggle(); accordion.closeAll(); clicked()">TUCANO
             DRENO</button>
-          <button class="menu-item" mat-menu-item routerLink="/tucanoduto" routerLinkActive="active">TUCANO
+          <button class="menu-item" mat-menu-item routerLink="/tucanoduto" routerLinkActive="active"
+            (click)="drawer.toggle(); accordion.closeAll(); clicked()">TUCANO
             DUTO</button>
-          <button class="menu-item" mat-menu-item routerLink="/tucanoliso" routerLinkActive="active">TUCANO
+          <button class="menu-item" mat-menu-item routerLink="/tucanoliso" routerLinkActive="active"
+            (click)="drawer.toggle(); accordion.closeAll(); clicked()">TUCANO
             LISO</button>
-          <button class="menu-item" mat-menu-item routerLink="/manilha" routerLinkActive="active">MANILHA PEAD</button>
-          <button class="menu-item" mat-menu-item routerLink="/todos" routerLinkActive="active">TODOS</button>
+          <button class="menu-item" mat-menu-item routerLink="/manilha" routerLinkActive="active"
+            (click)="drawer.toggle(); accordion.closeAll(); clicked()">MANILHA PEAD</button>
+          <button class="menu-item" mat-menu-item routerLink="/todos" routerLinkActive="active"
+            (click)="drawer.toggle(); accordion.closeAll(); clicked()">TODOS</button>
         </div>
       </mat-expansion-panel>
-      <button class="botoes-container-nav" mat-menu-item routerLink="/servicos"
-        routerLinkActive="active">SERVIÇOS</button>
-      <button class="botoes-container-nav" mat-menu-item routerLink="/vendas" routerLinkActive="active">VENDAS</button>
+      <button class="botoes-container-nav" mat-menu-item routerLink="/servicos" routerLinkActive="active"
+        (click)="drawer.toggle(); accordion.closeAll(); clicked()">SERVIÇOS</button>
+      <button class="botoes-container-nav" mat-menu-item routerLink="/vendas" routerLinkActive="active"
+        (click)="drawer.toggle(); accordion.closeAll(); clicked()">VENDAS</button>
       <a style="text-decoration: none;" target="_blank" href="https://tubostucano.blogspot.com/">
-        <button class="botoes-container-nav" mat-menu-item>BLOG</button>
+        <button class="botoes-container-nav" mat-menu-item
+          (click)="drawer.toggle(); accordion.closeAll(); clicked()">BLOG</button>
       </a>
-      <button class="botoes-container-nav" mat-menu-item routerLink="/contato"
-        routerLinkActive="active">CONTATO</button>
+      <button class="botoes-container-nav" mat-menu-item routerLink="/contato" routerLinkActive="active"
+        (click)="drawer.toggle(); accordion.closeAll(); clicked()">CONTATO</button>
     </mat-accordion>
   </div>
 </mat-drawer>

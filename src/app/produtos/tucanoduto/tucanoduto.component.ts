@@ -9,7 +9,7 @@ export class TucanodutoComponent implements OnInit {
 
   opcoes: any[] = [
     {
-      title: 'ANELAR (AN-ECCO) 3/4" - 8"',
+      title: 'ANELAR (AN-ECO) 3/4" - 8"',
       description: 'Eletro Duto Ecologicamente Correto da Tucano, fabricado em forma de anéis (anelar) a partir de matéria prima reprocessada (reciclada).',
       // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_1'
     },
@@ -19,7 +19,7 @@ export class TucanodutoComponent implements OnInit {
       // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_2'
     },
     {
-      title: 'HELICOIDAL (HL-ECCO) 1.½" - 8"',
+      title: 'HELICOIDAL (HL-ECO) 1.½" - 8"',
       description: 'Eletroduto Ecologicamente Correto da Tucano, fabricado a partir de matéria prima reciclada possui formato helicoidal (espiralado), é flexível e corrugado internamente e não possui emendas, o que diminui o atrito entre os cabos e o duto pela metade em comparação com os tubos lisos convencionais.',
       // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_2'
     },

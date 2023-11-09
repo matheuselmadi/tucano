@@ -9,8 +9,8 @@ export class TucanodrenoComponent implements OnInit {
 
   opcoes: any[] = [
     {
-      title: 'ANELAR (AN-ECCO)',
-      description: 'Tubo para drenagem do solo Ecologicamente Correto da Tucano, possui formato anelar e alto padrão de rigidez, produzido com matéria prima reciclada ecologicamente correta (ECCO).',
+      title: 'ANELAR (AN-ECO)',
+      description: 'Tubo para drenagem do solo Ecologicamente Correto da Tucano, possui formato anelar e alto padrão de rigidez, produzido com matéria prima reciclada ecologicamente correta (ECO).',
       // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_1'
     },
     {
