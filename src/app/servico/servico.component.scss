@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
 //   background-color: aqua;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1510px) {
     flex-direction: row;
   }
 }
@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     background-color: #ff661f;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1510px) {
       flex-direction: row;
     }
   }
@@ -34,7 +34,7 @@
   padding: 20px;
   margin: 80px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1310px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -87,11 +87,10 @@
 }
 
 .image {
-//   max-width: 100%;
-//   max-height: 100%;
-//   object-fit: contain;
-  width: 500px; /* Defina a largura desejada */
-  height: 400px; /* Defina a altura desejada */
+  max-width: 500px; 
+  max-height: 400px; 
+  width: 100%;
+  //   object-fit: contain;
   object-fit: cover; /* Isso ajuda a manter a proporção correta, cortando o excesso */
   border-radius: 8px;
 }
@@ -203,8 +202,8 @@
 	display: block;
 	top: 10%;
 	margin: 0 auto; /* Centraliza a imagem horizontalmente */
-	width: 1280px; /* Define a largura da imagem */
-	height: 720px; /* Define a altura da imagem */
+	width: 60%;
+	height: auto; 
 	position: relative; /* Permite o ajuste do z-index para a imagem */
 	z-index: 1001; /* Coloca a imagem acima do fundo escuro do modal */
   border-radius: 8px;
@@ -218,4 +217,16 @@
 	// color: #fff;
 	// cursor: pointer;
 	// z-index: 1002; /* Coloca o botão de fechar acima da imagem */
+}
+
+@media (max-width: 1220px) {    
+  .solda-but-container {
+    flex-direction: column; 
+  }
+  .photo-gallery {
+    margin-left: 10px;
+  }
+  .text-container2 {
+    margin-left: 0px;
+  }
 }

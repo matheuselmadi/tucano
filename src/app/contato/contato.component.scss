@@ -14,7 +14,7 @@
 }
 
 .text-title {
-    margin-left: 270px;
+    margin-left: 14.5%;
     padding-top: 28px;
 }
 
@@ -252,4 +252,13 @@
 
 .css-localizacao-desc p {
   font-size: 16px;
+}
+
+@media (max-width: 940px) {    
+  .vendedores-grid {
+    flex-direction: column; 
+  }
+  .vendedor {
+    width: 100%;
+  }
 }
