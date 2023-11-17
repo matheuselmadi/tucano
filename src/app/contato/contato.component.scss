@@ -165,7 +165,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 72vh;
+  min-height: 72vh;
   background-color: #f0f0f0;
 }
 
@@ -174,7 +174,7 @@
   padding: 20px;
   text-align: center;
   background-color: #ffffff;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); /* Adicione a sombra ao bloco */
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
 }
 
 .form-card h2{
@@ -184,7 +184,7 @@
 
 .mat-form-field {
   width: 100%;
-  margin-bottom: 10px; /* Adicione o espaço desejado */
+  margin-bottom: 10px;
 }
 
 .botao-enviar {
@@ -222,7 +222,8 @@
 }
 
 .css-localizacao-content {
-  padding-left: 20%;
+  // padding-left: 20%;
+  margin: 0 auto;
   padding-bottom: 20px;
   display: flex;
   align-items: center; /* Centraliza verticalmente o conteúdo da coluna */
@@ -238,6 +239,7 @@
 .css-localizacao-imagem img {
   width: 500px;
 	height: 210px;
+  border-radius: 8px;
 }
 
 .css-localizacao-desc {
@@ -261,4 +263,16 @@
   .vendedor {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 600px) {
+	.css-localizacao-content{
+		flex-direction: column; 
+	}
+
+	.css-localizacao-imagem img {
+		max-width: 90%;
+		height: auto;
+		margin: 0 auto;
+	}
 }
