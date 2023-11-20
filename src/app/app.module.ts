@@ -40,6 +40,7 @@ import { CaixaPassagemComponent } from './produtos/caixa-passagem/caixa-passagem
 import { ConexoesLisoComponent } from './produtos/conexoes-liso/conexoes-liso.component';
 import { ServicoComponent } from './servico/servico.component';
 import { GeotextilComponent } from './produtos/geotextil/geotextil.component';
+import { WhatsappComponent } from './whatsapp/whatsapp.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { GeotextilComponent } from './produtos/geotextil/geotextil.component';
     CaixaPassagemComponent,
     ConexoesLisoComponent,
     ServicoComponent,
-    GeotextilComponent
+    GeotextilComponent,
+    WhatsappComponent
   ],
   imports: [
     BrowserAnimationsModule,

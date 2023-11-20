@@ -176,8 +176,4 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
   }
 
-  openWhatsApp(): void {
-    window.open('https://wa.me/64981121100', '_blank');
-  }
-
 }
