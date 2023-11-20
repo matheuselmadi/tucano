@@ -53,7 +53,7 @@ export class AcessoriosComponent implements OnInit {
       id: 8,
       name: 'Manta Geotêxtil',
       description: 'Material permeável que possui a capacidade de drenar, filtrar e separar resíduos, e utilizada principalmente para evitar danos ao solo e na proteção e reforço de tubos e outros materiais.',
-      imageUrl: 'assets/images/acessorios/manta.jpg'
+      imageUrl: 'assets/images/acessorios/manta.webp'
     },
     {
       id: 8,

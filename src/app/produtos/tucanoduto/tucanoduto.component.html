@@ -32,7 +32,7 @@
   <h3>Opções do Tubo</h3>
   <div class="opcoes-card" *ngFor="let opcao of opcoes">
     <mat-card>
-      <!-- <img src="{{ accessory.imageUrl }}" alt="{{ accessory.title }}"> -->
+      <img src="{{ opcao.imageUrl }}" alt="{{ opcao.title }}">
       <mat-card-content class="opcoes-content">
         <h4><strong>{{ opcao.title }}</strong></h4>
         <p>{{ opcao.description }}</p>

@@ -117,6 +117,13 @@
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); 
   }
 
+  .opcoes-card img {
+    max-width: 100%;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+  }
+
   .opcoes-content {
     min-height: 180px;
   }

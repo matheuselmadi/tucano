@@ -529,6 +529,23 @@ p {
   color: white;
 }
 
+.whatsapp-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #ff661f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px; 
+}
+
+.whatsapp-fab svg {
+  color: white;
+}
+
 @media screen and (max-width: 750px) {
   .slide-content {
     transform: translateX(-15%);

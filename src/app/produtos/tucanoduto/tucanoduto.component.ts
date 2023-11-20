@@ -11,22 +11,22 @@ export class TucanodutoComponent implements OnInit {
     {
       title: 'ANELAR (AN-ECO) 3/4" - 8"',
       description: 'Eletro Duto Ecologicamente Correto da Tucano, fabricado em forma de anéis (anelar) a partir de matéria prima reprocessada (reciclada).',
-      // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_1'
+      imageUrl: 'assets/images/tucano-duto/AN-ECO.jpg'
     },
     {
       title: 'ANELAR (AN-NBR) 1.¼” - 8"',
       description: 'Eletroduto Normatizado da Tucano, fabricado em formato anelar a partir de material de primeira extrusão (virgem) atendendo a normativa NBR 15.715 da ABNT (Associação Brasileira de Normas Técnicas).',
-      // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_2'
+      imageUrl: 'assets/images/tucano-duto/AN-NBR.jpg'
     },
     {
       title: 'HELICOIDAL (HL-ECO) 1.½" - 8"',
       description: 'Eletroduto Ecologicamente Correto da Tucano, fabricado a partir de matéria prima reciclada possui formato helicoidal (espiralado), é flexível e corrugado internamente e não possui emendas, o que diminui o atrito entre os cabos e o duto pela metade em comparação com os tubos lisos convencionais.',
-      // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_2'
+      imageUrl: 'assets/images/tucano-duto/HL-ECO.jpg'
     },
     {
       title: 'HELICOIDAL (HL-NBR) 1.½ - 8"',
       description: 'Eletro Duto Normatizado da Tucano, fabricado em forma de espiral (helicoidal) com resinas em primeiro uso (virgem) de acordo com a normativa NBR 15.715 da ABNT (Associação Brasileira de Normas Técnicas). Corrugado e flexível oferece praticidade na hora da instalação, não possui emendas e possui altos índices de rigidez e resistência.',
-      // imageUrl: 'URL_DA_IMAGEM_ACESSORIO_2'
+      imageUrl: 'assets/images/tucano-duto/HL-NBR.jpeg'
     },
     // Adicione mais acessórios conforme necessário
   ];

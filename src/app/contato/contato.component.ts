@@ -11,7 +11,8 @@ import * as emailjs from 'emailjs-com';
 export class ContatoComponent implements OnInit {
 
   comercial = [
-    { nome: 'AMANDA', numero: '64 99230-8541', email: 'amanda@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=556492308541&text&type=phone_number&app_absent=0' },
+    // { nome: 'AMANDA', numero: '64 99230-8541', email: 'amanda@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=556492308541&text&type=phone_number&app_absent=0' },
+    { nome: '64 98112-1100', numero: '', email: 'vendas01@tucano.ind.br', url: 'https://api.whatsapp.com/send/?phone=5564981121100&text&type=phone_number&app_absent=0' },
   ];
 
   vendedores = [
