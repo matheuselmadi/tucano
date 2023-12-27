@@ -40,7 +40,7 @@ Novo
 ## Site
 
 Link do site utilizado como base para recriação (Em breve será substituído pelo novo):
-https://www.tucano.ind.br/site
+https://www.tucano.ind.br/
 
 Link do projeto rodando no vercel:
 https://tucano-nu.vercel.app/home
